@@ -1,0 +1,729 @@
+finess;Raison_sociale;Enquete_obligatoire;Participation;Resultat_rcp2;rcp2_c2_den_etbt;rcp2_c2_etbt;rcp2_c2_icbas_etbt;rcp2_c2_ichaut_etbt;rcp2_c2_pos_seuil_etbt;rcp2_c2_pos_evol_etbt;Lib_reg
+010780054;CENTRE HOSPITALIER BOURG EN BRESSE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Auvergne-Rhône-Alpes
+010780062;CENTRE HOSPITALIER DE BELLEY;Oui;Oui;Recueil Validé;21;71.43;48;89;B;Stable;Auvergne-Rhône-Alpes
+010780195;CLINIQUE CONVERT BOURG-EN-B.;Oui;Oui;ES non contrôlé;60;51.67;38;65;C;Négative;Auvergne-Rhône-Alpes
+010780203;HOPITAL PRIVE D'AMBERIEU;Oui;Oui;ES non contrôlé;22;54.55;32;76;C;Stable;Auvergne-Rhône-Alpes
+020000063;CTRE HOSP DE SAINT QUENTIN;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Hauts de France
+020000253;CTRE HOSP DE LAON;Oui;Oui;ES non contrôlé;43;93.02;81;99;A;Stable;Hauts de France
+020000261;CTRE HOSP DE SOISSONS;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Négative;Hauts de France
+020000287;CENTRE HOSPITALIER DE CHAUNY;Oui;Oui;ES non contrôlé;5;40;;;Effectif < 10;Non Calculable;Hauts de France
+020000360;CLINIQUE SAINT CHRISTOPHE;Oui;Oui;ES non contrôlé;44;47.73;32;63;C;Négative;Hauts de France
+020010047;POLICLINIQUE ST CLAUDE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Hauts de France
+030780092;CTRE HOSPITALIER MOULINS YZEURE;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Auvergne-Rhône-Alpes
+030780100;CENTRE HOSPITALIER MONTLUCON;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Auvergne-Rhône-Alpes
+030780118;CENTRE HOSPITALIER VICHY;Oui;Oui;ES non contrôlé;60;50;37;63;C;Stable;Auvergne-Rhône-Alpes
+030780548;POLYCL PERGOLA - VICHY;Oui;Oui;ES non contrôlé;28;85.71;67;96;B;Stable;Auvergne-Rhône-Alpes
+030781116;CL ST-FRANC ST ANT -DESERTINE;Oui;Oui;ES non contrôlé;60;46.67;34;60;C;Négative;Auvergne-Rhône-Alpes
+030785430;POLYCL ST-ODILON - MOULINS;Oui;Oui;ES non contrôlé;40;92.5;80;99;B;Stable;Auvergne-Rhône-Alpes
+040780215;CH MANOSQUE;Oui;Oui;ES non contrôlé;53;58.49;44;72;C;Négative;PACA
+040780470;CLINIQUE CHIR. TOUTES AURES;Oui;Oui;ES non contrôlé;0;;;;;;PACA
+040788879;CH DIGNE;Oui;Oui;ES non contrôlé;3;66.67;;;Effectif < 10;Non Calculable;PACA
+050000090;CLINIQUE DES HAUTES-ALPES;Oui;Oui;Recueil Non Validé;;;;;Non validé;Non validé;PACA
+050000116;CH DE BRIANCON;Oui;Oui;ES non contrôlé;17;41.18;18;67;C;Stable;PACA
+050002948;CHICAS GAP-SISTERON;Oui;Oui;ES non contrôlé;60;95;86;99;A;Positive;PACA
+060000528;CTRE ANTOINE LACASSAGNE;Oui;Oui;ES non contrôlé;60;85;73;93;B;Négative;PACA
+060021417;HOPITAL PRIVE CANNES OXFORD;Oui;Oui;ES non contrôlé;47;65.96;51;79;C;Stable;PACA
+060780442;CLINIQUE SAINT FRANCOIS;Oui;Oui;ES non contrôlé;3;33.33;;;Effectif < 10;Non Calculable;PACA
+060780491;INSTITUT ARNAULT TZANCK;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;PACA
+060780517;POLYCLINIQUE SAINT-JEAN;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;PACA
+060780590;CLINIQUE DU PALAIS;Oui;Oui;ES non contrôlé;25;80;59;93;B;Stable;PACA
+060780665;CLINIQUE LE MERIDIEN;Oui;Oui;ES non contrôlé;2;0;;;Effectif < 10;Non Calculable;PACA
+060780715;CLINIQUE SAINT GEORGE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;PACA
+060780723;CLINIQUE DU PARC IMPERIAL;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;PACA
+060780756;CLINIQUE SANTA MARIA;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;PACA
+060780897;CH DE GRASSE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;PACA
+060780954;C.H ANTIBES-JUAN LES PINS;Oui;Oui;ES non contrôlé;56;92.86;83;98;A;Stable;PACA
+060780988;CH DE CANNES;Oui;Oui;ES non contrôlé;60;30;19;43;C;Négative;PACA
+060781200;CLINIQUE SAINT ANTOINE;Oui;Oui;ES non contrôlé;53;100;100;100;A;Stable;PACA
+060785011;C.H.U. DE NICE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;PACA
+060785219;CLINIQUE PLEIN CIEL;Oui;Oui;ES non contrôlé;31;77.42;59;90;B;Non Calculable;PACA
+060800166;CLINIQUE DE L'ESPERANCE;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;PACA
+070002878;CENTRE HOSPITALIER DES VALS D'ARDECHE;Oui;Oui;ES non contrôlé;58;86.21;75;94;B;Stable;Auvergne-Rhône-Alpes
+070005566;CH D'ARDECHE MERIDIONALE;Oui;Oui;ES non contrôlé;28;67.86;48;84;B;Négative;Auvergne-Rhône-Alpes
+070780168;CLINIQUE DU VIVARAIS;Oui;Oui;ES non contrôlé;51;86.27;74;94;B;Stable;Auvergne-Rhône-Alpes
+070780358;CH D'ARDECHE NORD;Oui;Oui;ES non contrôlé;27;81.48;62;94;B;Stable;Auvergne-Rhône-Alpes
+070780424;CLINIQUE PASTEUR;Oui;Oui;ES non contrôlé;60;51.67;38;65;C;Stable;Auvergne-Rhône-Alpes
+080000615;CH CHARLEVILLE MEZIERES;Oui;Oui;ES non contrôlé;60;28.33;17;41;C;Négative;Grand Est
+080010473;GCS TERRIT ARDEN NORD SITE CH CHARLEVI;Oui;Oui;ES non contrôlé;49;10.2;3;22;C;Négative;Grand Est
+090781774;C H I DU VAL D ARIEGE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Occitanie
+100000017;CENTRE HOSPITALIER DE TROYES;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Négative;Grand Est
+100000124;POLYCL MONTIER LA CELLE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Grand Est
+100002351;CLINIQUE DE CHAMPAGNE - TROYES;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Grand Est
+110780061;CH CARCASSONNE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Occitanie
+110780137;CH NARBONNE;Oui;Oui;ES non contrôlé;60;70;57;81;B;Positive;Occitanie
+110780228;POLYCLINIQUE LE LANGUEDOC;Oui;Oui;ES non contrôlé;60;66.67;53;78;C;Stable;Occitanie
+110780483;CLINIQUE MONTREAL;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Occitanie
+120004528;CENTRE HOSPITALIER DE MILLAU;Oui;Oui;ES non contrôlé;13;53.85;25;81;B;Stable;Occitanie
+120780044;CH RODEZ;Oui;Oui;Recueil Validé;60;68.33;55;80;B;Négative;Occitanie
+120780069;CH VILLEFRANCHE-DE-ROUERGUE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Occitanie
+130001647;INSTITUT PAOLI - CALMETTES;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;PACA
+130008253;CLINIQUE DE VITROLLES;Oui;Oui;ES non contrôlé;30;100;100;100;A;Stable;PACA
+130037922;HPC RESIDENCE DU PARC;Oui;Oui;ES non contrôlé;4;0;;;Effectif < 10;Non Calculable;PACA
+130041916;CH DU PAYS D'AIX CHI AIX PERTUIS;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;PACA
+130043664;HOP EUROPEEN DESBIEF AMBROISE PARE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;PACA
+130780521;APHM HOPITAL NORD;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;PACA
+130781289;POLYCLINIQUE DU PARC RAMBOT LA PROVENCALE;Oui;Oui;ES non contrôlé;40;100;100;100;A;Stable;PACA
+130781370;CLINIQUE JEANNE D'ARC;Oui;Oui;ES non contrôlé;17;58.82;33;82;B;Stable;PACA
+130781479;CLINIQUE LA CASAMANCE;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Négative;PACA
+130782071;CLINIQUE DE L'ETANG DE L'OLIVIER;Oui;Oui;ES non contrôlé;19;73.68;49;91;B;Stable;PACA
+130782147;CLINIQUE GENERALE DE MARIGNANE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;PACA
+130782162;CLINIQUE DE MARTIGUES;Oui;Oui;ES non contrôlé;20;90;68;99;B;Stable;PACA
+130782634;CH DE SALON;Oui;Oui;ES non contrôlé;44;81.82;67;92;B;Stable;PACA
+130782675;CL. CHIRURGICALE DU DR VIGNOLI;Oui;Oui;ES non contrôlé;26;92.31;75;99;B;Stable;PACA
+130783236;APHM HOPITAL LA CONCEPTION;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;PACA
+130783293;APHM TIMONE ADULTES;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;PACA
+130783327;CLINIQUE BOUCHARD;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Stable;PACA
+130783723;CLINIQUE JUGE;Oui;Oui;ES non contrôlé;0;;;;;;PACA
+130784051;POLYCLINIQUE CLAIRVAL;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;PACA
+130784713;CLINIQUE BEAUREGARD;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;PACA
+130785389;CLINIQUE CHANTECLER;Oui;Oui;ES non contrôlé;23;91.3;72;99;B;Stable;PACA
+130785652;HOPITAL SAINT JOSEPH;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;PACA
+130785678;CLINIQUE VERT COTEAU;Oui;Oui;ES non contrôlé;30;96.67;83;99;A;Stable;PACA
+130786361;POLYCLINIQUE DU PARC RAMBOT;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;PACA
+130786445;ETOILE MATERNITE CATHOLIQUE;Oui;Oui;ES non contrôlé;43;100;100;100;A;Stable;PACA
+130786742;HÔPITAL D'INSTRUCTION DES ARMÉES LAVERAN;Oui;Oui;ES non contrôlé;28;100;100;100;A;Stable;Service de santé des armées
+130789274;CH D'ARLES;Oui;Oui;ES non contrôlé;28;92.86;76;99;B;Stable;PACA
+130789316;CH DE MARTIGUES;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;PACA
+130804297;APHM TIMONE ENFANTS;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;PACA
+130810740;CLINIQUE AXIUM;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;PACA
+140000035;CENTRE HOSPITALIER DE LISIEUX;Oui;Oui;ES non contrôlé;33;51.52;34;69;C;Stable;Normandie
+140000092;CENTRE HOSPITALIER DE BAYEUX;Oui;Oui;ES non contrôlé;27;100;100;100;A;Stable;Normandie
+140000100;CHU COTE DE NACRE CAEN;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Normandie
+140000118;CENTRE HOSPITALIER DE FALAISE;Oui;Oui;ES non contrôlé;40;80;64;91;B;Stable;Normandie
+140000290;CLINIQUE NOTRE-DAME (VIRE);Oui;Oui;ES non contrôlé;37;64.86;47;80;B;Stable;Normandie
+140000555;CENTRE DE LUTTE CONTRE LE CANCER - FRANÇOIS BACLES;Oui;Oui;ES non contrôlé;60;70;57;81;B;Négative;Normandie
+140016759;POLYCLINIQUE DU PARC;Oui;Oui;ES non contrôlé;60;48.33;35;62;C;Négative;Normandie
+140017237;CHP ST MARTIN CAEN;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Normandie
+140018730;POLYCLINIQUE DE LISIEUX;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Normandie
+140026709;POLYCLINIQUE DE DEAUVILLE-CRICQUEBOEUF;Oui;Oui;ES non contrôlé;17;70.59;44;90;B;Positive;Normandie
+150780088;CENTRE HOSPITALIER ST-FLOUR;Oui;Oui;ES non contrôlé;16;75;48;93;B;Stable;Auvergne-Rhône-Alpes
+150780096;C.H. HENRI MONDOR AURILLAC;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Auvergne-Rhône-Alpes
+150780732;C MC - AURILLAC;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Auvergne-Rhône-Alpes
+160000170;CLINIQUE SAINT JOSEPH S.A.;Oui;Oui;ES non contrôlé;14;100;100;100;A;Stable;Nouvelle Aquitaine
+160000279;CLINIQUE DE COGNAC;Oui;Oui;ES non contrôlé;39;82.05;66;93;B;Stable;Nouvelle Aquitaine
+160000451;CENTRE HOSPITALIER ANGOULEME;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Nouvelle Aquitaine
+160013207;CENTRE CLINICAL;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Nouvelle Aquitaine
+160014411;CTRE HOSP INTERCOMM DU PAYS DE COGNAC;Oui;Oui;ES non contrôlé;5;80;;;Effectif < 10;Non Calculable;Nouvelle Aquitaine
+170024194;GROUPE HOSP. DE LA ROCHELLE-RE-AUNIS;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Nouvelle Aquitaine
+170780050;CENTRE HOSPITALIER DE JONZAC;Oui;Oui;ES non contrôlé;20;100;100;100;A;Non Calculable;Nouvelle Aquitaine
+170780175;CENTRE HOSPITALIER DE SAINTES (ST LOUIS);Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Nouvelle Aquitaine
+170780225;C. H. ROCHEFORT-SUR-MER;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Nouvelle Aquitaine
+170780563;CLINIQUE PASTEUR;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Nouvelle Aquitaine
+170780613;SA CLINIQUE DU MAIL;Oui;Oui;Recueil Validé;60;58.33;45;71;C;Négative;Nouvelle Aquitaine
+170780621;POLYCLINIQUE SAINT-GEORGES;Oui;Oui;Recueil Validé;18;88.89;65;99;B;Stable;Nouvelle Aquitaine
+170780662;CENTRE MEDICO-CHIRURGICAL DE L'ATLANTIQUE;Oui;Oui;Recueil Validé;22;63.64;41;83;B;Stable;Nouvelle Aquitaine
+180000028;C. H. J. COEUR BOURGES;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Positive;Centre-Val de Loire
+180000358;CLINIQUE DES GRAINETIERES;Oui;Oui;ES non contrôlé;41;82.93;68;93;B;Stable;Centre-Val de Loire
+180004145;HOPITAL PRIVE GUILLAUME DE VARYE;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Centre-Val de Loire
+190000042;CENTRE HOSPITALIER BRIVE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Positive;Nouvelle Aquitaine
+190000059;CENTRE HOSPITALIER COEUR DE CORREZE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Nouvelle Aquitaine
+190000075;CENTRE HOSPITALIER USSEL;Oui;Oui;ES non contrôlé;20;50;27;73;C;Stable;Nouvelle Aquitaine
+190000224;CMC LES CEDRES BRIVE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Nouvelle Aquitaine
+190000257;CLINIQUE SAINT-GERMAIN BRIVE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Nouvelle Aquitaine
+200200145;POLYCLINIQUE LA RESIDENCE;Oui;Oui;ES non contrôlé;29;79.31;60;92;B;Stable;Corse
+210011847;POLYCLINIQUE DU PARC DREVON;Oui;Oui;ES non contrôlé;60;55;42;68;C;Positive;Bourgogne-Franche-Comté
+210012175;HOSPICES CIVILS DE BEAUNE;Oui;Oui;ES non contrôlé;59;64.41;51;76;C;Stable;Bourgogne-Franche-Comté
+210012670;HOPITAL PRIVE DIJON BOURGOGNE;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Non Calculable;Bourgogne-Franche-Comté
+210780581;C.H.U. DE DIJON;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Bourgogne-Franche-Comté
+210780706;CENTRE HOSPITALIER ROBERT MORLEVAT SEMUR EN AUXOIS;Oui;Oui;ES non contrôlé;10;50;19;81;B;Non Calculable;Bourgogne-Franche-Comté
+210780789;CLINIQUE MEDICO-CHIRURGICALE;Oui;Oui;ES non contrôlé;60;75;62;85;B;Positive;Bourgogne-Franche-Comté
+210987731;CENTRE GEORGES-FRANCOIS LECLERC;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Bourgogne-Franche-Comté
+220000020;CENTRE HOSPITALIER ST BRIEUC;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Bretagne
+220000079;CENTRE HOSPITALIER GUINGAMP;Oui;Oui;ES non contrôlé;47;93.62;82;99;A;Stable;Bretagne
+220000103;CENTRE HOSPITALIER LANNION;Oui;Oui;ES non contrôlé;30;96.67;83;99;A;Stable;Bretagne
+220000111;POLYCLINIQUE DU TREGOR;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Bretagne
+220005599;POLYCLINIQUE DU PAYS DE RANCE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Bretagne
+220022800;HOPITAL PRIVE DES COTES D'ARMOR;Oui;Oui;Recueil Validé;60;93.33;84;98;A;Non Calculable;Bretagne
+230780041;CENTRE HOSPITALIER GUERET;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Nouvelle Aquitaine
+230780082;CTRE MEDICAL NATIONAL STE FEYRE;Oui;Oui;ES non contrôlé;2;100;;;Effectif < 10;Non Calculable;Nouvelle Aquitaine
+230780157;CLINIQUE DE LA MARCHE;Oui;Oui;ES non contrôlé;12;58.33;28;85;B;Stable;Nouvelle Aquitaine
+240000059;CTRE HOSPITALIER BERGERAC;Oui;Oui;ES non contrôlé;36;88.89;74;97;B;Stable;Nouvelle Aquitaine
+240000117;CENTRE HOSPITALIER PERIGUEUX;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Nouvelle Aquitaine
+240000190;POLYCLINIQUE FRANCHEVILLE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Nouvelle Aquitaine
+240000208;CLINIQUE PASTEUR;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Nouvelle Aquitaine
+250000015;CHU BESANCON;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Bourgogne-Franche-Comté
+250000270;CLINIQUE SAINT-VINCENT;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;Bourgogne-Franche-Comté
+250000452;CHI DE HAUTE-COMTÉ;Oui;Oui;ES non contrôlé;49;71.43;57;83;B;Stable;Bourgogne-Franche-Comté
+250011848;POLYCLINIQUE DE FRANCHE COMTE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Bourgogne-Franche-Comté
+260000021;CENTRE HOSPITALIER DE VALENCE;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Stable;Auvergne-Rhône-Alpes
+260000047;GROUPEMENT HOSPITALIER PORTES DE PROVENCE;Oui;Oui;ES non contrôlé;60;75;62;85;B;Stable;Auvergne-Rhône-Alpes
+260000260;CLINIQUE LA PARISIERE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+260003017;SA CLINIQUE KENNEDY;Oui;Oui;ES non contrôlé;44;88.64;75;96;B;Positive;Auvergne-Rhône-Alpes
+260006267;CLINIQUE GENERALE;Oui;Oui;ES non contrôlé;36;63.89;46;79;C;Stable;Auvergne-Rhône-Alpes
+260016910;HOPITAUX DROME NORD;Oui;Oui;ES non contrôlé;60;58.33;45;71;C;Positive;Auvergne-Rhône-Alpes
+270000326;CLINIQUE PASTEUR;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Négative;Normandie
+270023724;CHI EURE SEINE HOPITAUX EVREUX-VERNON;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Normandie
+280000134;CH CHARTRES;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Centre-Val de Loire
+280000183;"C.H. ""VICTOR JOUSSELIN""";Oui;Oui;Recueil Validé;60;78.33;66;88;B;Stable;Centre-Val de Loire
+280505777;HOPITAL PRIVE D'EURE ET LOIR;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Centre-Val de Loire
+290000017;C.H.U. BREST;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Bretagne
+290000140;CLINIQUE PASTEUR-SAINT ESPRIT;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Bretagne
+290000207;CLINIQUE ST MICHEL ET STE ANNE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Bretagne
+290000215;POLYCLINIQUE QUIMPER SUD;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Bretagne
+290000728;HÔPITAL D'INSTRUCTION DES ARMÉES CLERMONT-TONNERRE;Oui;Oui;ES non contrôlé;5;60;;;Effectif < 10;Non Calculable;Service de santé des armées
+290004142;CLINIQUE DU GRAND LARGE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Bretagne
+290019777;POLYCLINIQUE DE KERAUDREN;Oui;Oui;ES non contrôlé;60;80;68;89;B;Positive;Bretagne
+290020700;CENTRE HOSPITALIER INTERCOMMUNAL DE CORNOUAILLE QU;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Bretagne
+290021542;CENTRE HOSPITALIER DES PAYS DE MORLAIX;Oui;Oui;ES non contrôlé;55;78.18;65;88;B;Stable;Bretagne
+290023431;CMC BAIE DE MORLAIX;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Bretagne
+2A0000014;CENTRE HOSPITALIER GAL D'AJACCIO;Oui;Oui;ES non contrôlé;60;61.67;48;74;C;Négative;Corse
+2A0000139;SA CLINISUD;Oui;Oui;ES non contrôlé;60;58.33;45;71;C;Stable;Corse
+2A0000386;C.H.S. DE CASTELLUCCIO;Oui;Oui;Recueil Validé;60;85;73;93;B;Stable;Corse
+2B0000020;CENTRE HOSPITALIER BASTIA;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Corse
+2B0000392;POLYCLINIQUE DE FURIANI;Oui;Oui;ES non contrôlé;60;36.67;25;50;C;Négative;Corse
+300017209;KENVAL INSTITUT DE CANCEROLOGIE;Oui;Oui;Recueil Validé;45;95.56;85;99;A;Non Calculable;Occitanie
+300780038;CHU NIMES;Oui;Oui;ES non contrôlé;60;70;57;81;B;Négative;Occitanie
+300780046;CH ALES;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Positive;Occitanie
+300780053;CH BAGNOLS SUR CEZE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Positive;Occitanie
+300780137;NOUVELLE CLINIQUE BONNEFON;Oui;Oui;ES non contrôlé;60;51.67;38;65;C;Stable;Occitanie
+300780152;HOPITAL PRIVE LES FRANCISCAINES;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Occitanie
+300781465;CLINIQUE KENNEDY;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Positive;Occitanie
+300788502;POLYCLINIQUE DU GRAND SUD;Oui;Oui;ES non contrôlé;60;55;42;68;C;Négative;Occitanie
+310026083;CLINIQUE SAINT-CYPRIEN RIVE GAUCHE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Non Calculable;Occitanie
+310780101;CLINIQUE SAINT JEAN LANGUEDOC;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Occitanie
+310780259;S.A. CLINIQUE PASTEUR;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Occitanie
+310780283;NOUVELLE CLINIQUE DE L'UNION;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Occitanie
+310780309;POLYCLINIQUE DU PARC;Oui;Oui;ES non contrôlé;55;80;67;90;B;Stable;Occitanie
+310780382;CLINIQUE AMBROISE PARE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Occitanie
+310780671;CH SAINT-GAUDENS;Oui;Oui;ES non contrôlé;33;75.76;58;89;B;Stable;Occitanie
+310781000;CLINIQUE DES CEDRES;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Stable;Occitanie
+310781067;HOPITAL JOSEPH DUCUING;Oui;Oui;ES non contrôlé;20;95;75;99;B;Stable;Occitanie
+310781406;CHR TOULOUSE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Occitanie
+310781505;CLINIQUE D'OCCITANIE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Positive;Occitanie
+310782347;INSTITUT CLAUDIUS REGAUD;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Occitanie
+320780067;CLINIQUE DU DR CARLIER;Oui;Oui;ES non contrôlé;60;63.33;50;75;C;Stable;Occitanie
+320780117;CH AUCH;Oui;Oui;ES non contrôlé;46;91.3;79;98;B;Stable;Occitanie
+330000340;M.S.P.B. BAGATELLE;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Nouvelle Aquitaine
+330000662;INSTITUT BERGONIE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Nouvelle Aquitaine
+330027509;CH SUD GIRONDE LANGON-LA REOLE;Oui;Oui;ES non contrôlé;21;61.9;38;82;B;Stable;Nouvelle Aquitaine
+330780040;CLINIQUE CHIRURGICALE BEL AIR;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Nouvelle Aquitaine
+330780081;CLINIQUE SAINT AUGUSTIN;Oui;Oui;ES non contrôlé;60;58.33;45;71;C;Stable;Nouvelle Aquitaine
+330780115;CLINIQUE TIVOLI-DUCOS;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Nouvelle Aquitaine
+330780206;CLINIQUE D'ARCACHON;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Nouvelle Aquitaine
+330780263;POLYCLINIQUE BORDEAUX RIVE DROITE;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Nouvelle Aquitaine
+330780479;POLYCLINIQUE BX-NORD AQUITAINE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Nouvelle Aquitaine
+330780495;CLINIQUE MUTUALISTE DU MEDOC;Oui;Oui;ES non contrôlé;7;85.71;;;Effectif < 10;Non Calculable;Nouvelle Aquitaine
+330780503;POLYCLINIQUE SAINT MARTIN;Oui;Oui;ES non contrôlé;19;100;100;100;A;Stable;Nouvelle Aquitaine
+330780511;CLINIQUE SAINTE ANNE;Oui;Oui;ES non contrôlé;52;94.23;84;99;A;Stable;Nouvelle Aquitaine
+330780529;CLINIQUE MUTUALISTE;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Nouvelle Aquitaine
+330780537;CLINIQUE WALLERSTEIN;Oui;Oui;ES non contrôlé;48;77.08;63;88;B;Stable;Nouvelle Aquitaine
+330781196;C.H.U. DE BORDEAUX;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Nouvelle Aquitaine
+330781204;CENTRE HOSPITALIER D'ARCACHON;Oui;Oui;ES non contrôlé;39;94.87;83;99;A;Positive;Nouvelle Aquitaine
+330781253;CENTRE HOSPITALIER DE LIBOURNE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Nouvelle Aquitaine
+330781303;HÔPITAL D'INSTRUCTION DES ARMÉES ROBERT PICQUE;Oui;Oui;ES non contrôlé;26;69.23;48;86;B;Stable;Service de santé des armées
+330782582;POLYCLINIQUE JEAN VILLAR;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Nouvelle Aquitaine
+340000207;ICM INSTITUT DU CANCER DE MONTPELLIER;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Négative;Occitanie
+340009885;POLYCLINIQUE CHAMPEAU;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Négative;Occitanie
+340011295;LES HOPITAUX DU BASSIN DE THAU;Oui;Oui;ES non contrôlé;58;58.62;45;71;C;Stable;Occitanie
+340015502;CLINIQUE LE MILLENAIRE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Positive;Occitanie
+340015965;SAS POLYCLINIQUE SAINT PRIVAT;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;Occitanie
+340780055;CH BEZIERS;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Occitanie
+340780139;CLINIQUE DU DR. CAUSSE;Oui;Oui;ES non contrôlé;9;77.78;;;Effectif < 10;Non Calculable;Occitanie
+340780477;CHU MONTPELLIER;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Occitanie
+340780634;POLYCLINIQUE SAINT-JEAN;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Occitanie
+340780642;CLINIQUE BEAU SOLEIL;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Occitanie
+340780667;CLINIQUE DU PARC;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Occitanie
+340780675;CLINIQUE CLEMENTVILLE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Occitanie
+340780717;CLINIQUE SAINT- LOUIS;Oui;Oui;ES non contrôlé;35;91.43;77;98;B;Positive;Occitanie
+340780741;POLYCLINIQUE SAINTE THERESE;Oui;Oui;ES non contrôlé;60;80;68;89;B;Négative;Occitanie
+350000022;CENTRE HOSPITALIER ST MALO;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Bretagne
+350000030;CENTRE HOSPITALIER FOUGERES;Oui;Oui;ES non contrôlé;16;100;100;100;A;Stable;Bretagne
+350000055;CENTRE HOSPITALIER VITRE;Oui;Oui;ES non contrôlé;23;82.61;61;95;B;Stable;Bretagne
+350000121;CHP ST-GREGOIRE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Bretagne
+350000139;CLINIQUE MUTUALISTE LA SAGESSE RENNES;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Bretagne
+350000196;CLINIQUE DE LA COTE D'EMERAUDE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Bretagne
+350002192;POLYCLINIQUE SAINT LAURENT;Oui;Oui;ES non contrôlé;59;88.14;77;95;B;Stable;Bretagne
+350002812;CRLCC E. MARQUIS;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Négative;Bretagne
+350005146;POLYCLINIQUE SEVIGNE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Bretagne
+350005179;CHRU DE RENNES;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Bretagne
+360000053;C.H. DE CHATEAUROUX;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;Centre-Val de Loire
+360000129;"CLINIQUE ""ST FRANCOIS""";Oui;Oui;ES non contrôlé;60;18.33;9;30;C;Négative;Centre-Val de Loire
+370000051;CLINIQUE JEANNE D ARC;Oui;Oui;ES non contrôlé;22;95.45;77;99;B;Stable;Centre-Val de Loire
+370000085;CLINIQUE SAINT-GATIEN SA;Oui;Oui;ES non contrôlé;45;97.78;88;99;A;Positive;Centre-Val de Loire
+370000093;CLINIQUE DE L'ALLIANCE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Centre-Val de Loire
+370000481;C.H.U. DE TOURS;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Centre-Val de Loire
+370007569;PÔLE SANTÉ LÉONARD DE VINCI;Oui;Oui;ES non contrôlé;60;90;79;96;B;Positive;Centre-Val de Loire
+380012658;GROUPE HOSPITALIER MUTUALISTE DE GRENOBLE;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Auvergne-Rhône-Alpes
+380780049;CENTRE HOSPITALIER BOURGOIN JALLIEU;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;Auvergne-Rhône-Alpes
+380780080;CHU GRENOBLE;Oui;Oui;ES non contrôlé;60;70;57;81;B;Stable;Auvergne-Rhône-Alpes
+380780197;CLINIQUE SAINT VINCENT DE PAUL;Oui;Oui;ES non contrôlé;60;25;15;38;C;Négative;Auvergne-Rhône-Alpes
+380780288;CLINIQUE DE CHARTREUSE;Oui;Oui;ES non contrôlé;58;79.31;67;89;B;Négative;Auvergne-Rhône-Alpes
+380781435;CENTRE HOSPITALIER DE VIENNE;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Auvergne-Rhône-Alpes
+380784751;CENTRE HOSPITALIER VOIRON;Oui;Oui;Recueil Validé;34;85.29;69;95;B;Stable;Auvergne-Rhône-Alpes
+380785956;CLINIQUE DES CEDRES;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+380786442;CLINIQUE BELLEDONNE;Oui;Oui;ES non contrôlé;60;66.67;53;78;C;Stable;Auvergne-Rhône-Alpes
+390780146;CH LONS;Oui;Oui;ES non contrôlé;60;85;73;93;B;Négative;Bourgogne-Franche-Comté
+390780575;POLYCLINIQUE DU PARC;Oui;Oui;ES non contrôlé;42;85.71;71;95;B;Stable;Bourgogne-Franche-Comté
+390780609;CH PASTEUR DOLE;Oui;Oui;ES non contrôlé;32;90.63;75;98;B;Stable;Bourgogne-Franche-Comté
+400011177;CH DE MONT DE MARSAN;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Positive;Nouvelle Aquitaine
+400780193;CENTRE HOSPITALIER DAX;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Positive;Nouvelle Aquitaine
+400780359;CLINIQUE DES LANDES;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Positive;Nouvelle Aquitaine
+410000087;C. H. DE BLOIS;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Négative;Centre-Val de Loire
+410000103;C. H. ROMORANTIN LANTHENAY;Oui;Oui;ES non contrôlé;18;61.11;36;83;B;Stable;Centre-Val de Loire
+410000202;POLYCLINIQUE DE BLOIS;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Centre-Val de Loire
+410004998;CLINIQUE DU SAINT COEUR;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Centre-Val de Loire
+420002495;HOPITAL DU GIER;Oui;Oui;ES non contrôlé;47;82.98;69;92;B;Stable;Auvergne-Rhône-Alpes
+420010050;CLINIQUE MUTUALISTE DE LA LOIRE;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Auvergne-Rhône-Alpes
+420011413;CHPL;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Auvergne-Rhône-Alpes
+420013492;INSTITUT DE CANCEROLOGIE DE LA LOIRE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Positive;Auvergne-Rhône-Alpes
+420013831;CENTRE HOSPITALIER DU FOREZ;Oui;Oui;ES non contrôlé;24;58.33;37;78;C;Négative;Auvergne-Rhône-Alpes
+420780033;CENTRE HOSPITALIER DE ROANNE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Positive;Auvergne-Rhône-Alpes
+420780504;CLINIQUE DU PARC;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Positive;Auvergne-Rhône-Alpes
+420780652;CENTRE HOSPITALIER DE FIRMINY;Oui;Oui;ES non contrôlé;20;90;68;99;B;Stable;Auvergne-Rhône-Alpes
+420782310;CLINIQUE DU RENAISON;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+420784878;CHU SAINT ETIENNE;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Auvergne-Rhône-Alpes
+430000018;C.H. EMILE ROUX LE PUY;Oui;Oui;ES non contrôlé;60;85;73;93;B;Négative;Auvergne-Rhône-Alpes
+430000109;CL BON SECOURS - LE PUY;Oui;Oui;ES non contrôlé;60;65;52;77;C;Stable;Auvergne-Rhône-Alpes
+440000057;CENTRE HOSPITALIER ST-NAZAIRE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Pays de la Loire
+440000289;C.H.U. DE NANTES;Oui;Oui;ES non contrôlé;60;85;73;93;B;Positive;Pays de la Loire
+440000404;CLINIQUE CHIRURG.STE-MARIE;Oui;Oui;ES non contrôlé;22;72.73;50;89;B;Positive;Pays de la Loire
+440000412;CLINIQUE BRETECHE VIAUD;Oui;Oui;ES non contrôlé;22;90.91;71;99;B;Stable;Pays de la Loire
+440001113;C.R.L.C.C. RENE GAUDUCHEAU;Oui;Oui;Recueil Validé;60;75;62;85;B;Stable;Pays de la Loire
+440002020;POLYCLINIQUE DE L'EUROPE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Pays de la Loire
+440029338;CLINIQUE MUTUALISTE JULES VERNE;Oui;Oui;ES non contrôlé;60;63.33;50;75;C;Stable;Pays de la Loire
+440029379;CLINIQUE JULES VERNE;Oui;Oui;ES non contrôlé;17;70.59;44;90;B;Stable;Pays de la Loire
+440033819;POLYCLINIQUE DE L'ATLANTIQUE;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Pays de la Loire
+440041580;L'HOPITAL PRIVE DU CONFLUENT;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Pays de la Loire
+440050433;CLINIQUE MUTUALISTE DE L'ESTUAIRE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Pays de la Loire
+450000088;C.H.R. ORLEANS;Oui;Oui;ES non contrôlé;60;66.67;53;78;C;Stable;Centre-Val de Loire
+450000104;C.H. AGGLOMERATION MONTARGOISE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Centre-Val de Loire
+450000237;CLINIQUE JEANNE D'ARC - GIEN;Oui;Oui;ES non contrôlé;16;62.5;35;85;B;Stable;Centre-Val de Loire
+450000245;"CLINIQUE ""L'ARCHETTE""";Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Centre-Val de Loire
+450010079;"POLYCLINIQUE ""LONGUES ALLEES""";Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Positive;Centre-Val de Loire
+460780083;CH FIGEAC;Oui;Oui;ES non contrôlé;26;92.31;75;99;B;Stable;Occitanie
+460780216;CH CAHORS;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Occitanie
+470000027;CLINIQUE ESQUIROL - SAINT-HILAIRE;Oui;Oui;Recueil Validé;60;90;79;96;B;Stable;Nouvelle Aquitaine
+470000324;CENTRE HOSPITALIER DE VILLENEUVE;Oui;Oui;ES non contrôlé;16;100;100;100;A;Stable;Nouvelle Aquitaine
+470001660;CH MARMANDE TONNEINS;Oui;Oui;ES non contrôlé;15;100;100;100;A;Stable;Nouvelle Aquitaine
+470016049;POLE DE SANTE DU VILLENEUVOIS;Oui;Oui;Recueil Validé;60;93.33;84;98;A;Stable;Nouvelle Aquitaine
+470016171;CENTRE HOSPITALIER AGEN-NERAC;Oui;Oui;Recueil Validé;57;84.21;72;93;B;Non Calculable;Nouvelle Aquitaine
+480780097;CH MENDE;Oui;Oui;ES non contrôlé;29;0;0;0;C;Négative;Occitanie
+490000031;C.H.R.U. ANGERS;Oui;Oui;ES non contrôlé;60;66.67;53;78;C;Stable;Pays de la Loire
+490000155;CTRE REGIONAL DE LUTTE C/CANCER;Oui;Oui;ES non contrôlé;60;70;57;81;B;Stable;Pays de la Loire
+490000262;CLINIQUE SAINT-JOSEPH;Oui;Oui;ES non contrôlé;43;93.02;81;99;A;Stable;Pays de la Loire
+490000676;CENTRE HOSPITALIER CHOLET;Oui;Oui;ES non contrôlé;60;80;68;89;B;Positive;Pays de la Loire
+490002037;SA POLYCLINIQUE DU PARC;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Négative;Pays de la Loire
+490007929;CLINIQUE CHIRURGICALE DE LA LOIRE;Oui;Oui;ES non contrôlé;60;85;73;93;B;Positive;Pays de la Loire
+490014909;CLINIQUE DE L'ANJOU;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Pays de la Loire
+490528452;CENTRE HOSPITALIER SAUMUR;Oui;Oui;ES non contrôlé;17;100;100;100;A;Stable;Pays de la Loire
+500000013;CENTRE HOSPITALIER PUBLIC DU COTENTIN;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Normandie
+500000054;CH AVRANCHES GRANVILLE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Normandie
+500000112;HOPITAL MEMORIAL ST LO;Oui;Oui;ES non contrôlé;41;80.49;65;91;B;Stable;Normandie
+500000146;POLYCLINIQUE DE LA BAIE-ST MARTIN;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Normandie
+500000203;POLYCLINIQUE DE LA MANCHE - SAINT-LO;Oui;Oui;ES non contrôlé;60;95;86;99;A;Positive;Normandie
+500002357;POLYCLINIQUE DU COTENTIN;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Normandie
+510000029;CHR DE REIMS;Oui;Oui;Recueil Validé;60;66.67;53;78;C;Stable;Grand Est
+510000037;CH CHALONS EN CHAMPAGNE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Positive;Grand Est
+510000185;POLYCLINIQUE COURLANCY - REIMS;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Grand Est
+510000516;INSTITUT JEAN GODINOT;Oui;Oui;Recueil Validé;60;86.67;75;94;B;Stable;Grand Est
+510012040;POLYCLINIQUE LES BLEUETS - REIMS;Oui;Oui;ES non contrôlé;32;62.5;44;79;C;Stable;Grand Est
+520780073;CENTRE HOSPITALIER DE ST DIZIER;Oui;Oui;ES non contrôlé;54;96.3;87;99;A;Stable;Grand Est
+520780180;CLINIQUE FRANCOIS 1ER;Oui;Oui;ES non contrôlé;35;51.43;34;69;C;Négative;Grand Est
+520780214;CENTRE MEDICO CHIRURGICAL;Oui;Oui;ES non contrôlé;8;87.5;;;Effectif < 10;Non Calculable;Grand Est
+530000025;CH INTERCOMMUNAL DU HAUT-ANJOU;Oui;Oui;ES non contrôlé;60;56.67;43;69;C;Stable;Pays de la Loire
+530000074;CENTRE HOSPITALIER NORD-MAYENNE;Oui;Oui;ES non contrôlé;4;0;;;Effectif < 10;Non Calculable;Pays de la Loire
+530000371;CENTRE HOSPITALIER LAVAL;Oui;Oui;ES non contrôlé;58;79.31;67;89;B;Stable;Pays de la Loire
+530031962;POLYCLINIQUE DU MAINE;Oui;Oui;Recueil Validé;60;85;73;93;B;Positive;Pays de la Loire
+540000049;CENTRE HOSPITALIER - TOUL;Oui;Oui;ES non contrôlé;27;81.48;62;94;B;Stable;Grand Est
+540000080;CENTRE HOSPITALIER - LUNEVILLE;Oui;Oui;ES non contrôlé;30;76.67;58;90;B;Stable;Grand Est
+540000361;CLINIQUE JEANNE D'ARC - LUNEVILL;Oui;Oui;ES non contrôlé;30;76.67;58;90;B;Stable;Grand Est
+540000478;POLYCLINIQUE LOUIS PASTEUR;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Grand Est
+540000486;POLYCLINIQUE DE GENTILLY;Oui;Oui;Recueil Validé;60;80;68;89;B;Stable;Grand Est
+540000767;CENTRE HOSPITALIER - BRIEY;Oui;Oui;ES non contrôlé;17;100;100;100;A;Positive;Grand Est
+540001096;CH DE MT ST MARTIN (GROUPE SOS SANTE);Oui;Oui;ES non contrôlé;11;90.91;59;99;B;Positive;Grand Est
+540001286;INSTITUT DE CANCEROLOGIE DE LORRAINE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Grand Est
+540013224;POLYCLINIQUE MAJORELLE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Grand Est
+540023264;C.H.U. DE NANCY;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Grand Est
+550000178;POLYCLINIQUE DU PARC - BAR-LE-DUC;Oui;Oui;ES non contrôlé;40;95;83;99;A;Stable;Grand Est
+550003354;CENTRE HOSPITALIER - BAR LE DUC;Oui;Oui;ES non contrôlé;13;61.54;32;86;B;Stable;Grand Est
+550006795;CENTRE HOSPITALIER VERDUN/SAINT MIHIEL;Oui;Oui;ES non contrôlé;60;65;52;77;C;Stable;Grand Est
+560000044;CENTRE HOSPITALIER PLOERMEL;Oui;Oui;ES non contrôlé;36;66.67;49;81;B;Stable;Bretagne
+560002511;CLINIQUE DU TER;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Négative;Bretagne
+560002933;CLINIQUE MUTUALISTE PORTE DE L'ORIENT;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Bretagne
+560005746;CENTRE HOSPITALIER BRETAGNE SUD LORIENT;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Bretagne
+560007510;POLYCLINIQUE DE PONTIVY;Oui;Oui;ES non contrôlé;48;89.58;77;97;B;Stable;Bretagne
+560008799;CLINIQUE OCEANE;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Bretagne
+560014748;CENTRE HOSPITALIER DU CENTRE BRETAGNE;Oui;Oui;Recueil Validé;60;86.67;75;94;B;Stable;Bretagne
+560023210;CENTRE HOSPITALIER BRETAGNE ATLANTIQUE VANNES;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Bretagne
+570000083;CLINIQUE SAINT NABOR;Oui;Oui;ES non contrôlé;9;100;;;Effectif < 10;Non Calculable;Grand Est
+570000158;CH DE SARREGUEMINES;Oui;Oui;ES non contrôlé;60;75;62;85;B;Positive;Grand Est
+570000216;HOSPITALOR - SAINT-AVOLD;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Grand Est
+570000356;CLINIQUE CHIR. AMBROISE PARE;Oui;Oui;ES non contrôlé;60;63.33;50;75;C;Positive;Grand Est
+570000646;HOPITAL CLINIQUE CLAUDE BERNARD;Oui;Oui;ES non contrôlé;60;51.67;38;65;C;Positive;Grand Est
+570001057;HOPITAL BELLE ISLE METZ;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Grand Est
+570005165;C. H. R. - METZ THIONVILLE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Grand Est
+570015099;CENTRE HOSPITALIER - SARREBOURG;Oui;Oui;ES non contrôlé;22;90.91;71;99;B;Positive;Grand Est
+570025254;CENTRE HOSPITALIER INTERCOMMUNAL UNISANTE;Oui;Oui;ES non contrôlé;8;100;;;Effectif < 10;Non Calculable;Grand Est
+570026252;HOPITAL ROBERT SCHUMAN;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Grand Est
+580780039;C.H. DE L'AGGLOMÉRATION DE NEVERS;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Bourgogne-Franche-Comté
+580780138;POLYCLINIQUE DU VAL DE LOIRE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Bourgogne-Franche-Comté
+580780195;CLINIQUE DE COSNE-SUR-LOIRE;Oui;Oui;ES non contrôlé;27;48.15;29;68;C;Positive;Bourgogne-Franche-Comté
+590000188;CLCC OSCAR LAMBRET LILLE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Hauts de France
+590006896;POLYCLINIQUE DE LA THIERACHE;Oui;Oui;ES non contrôlé;23;82.61;61;95;B;Stable;Hauts de France
+590008041;POLYCLINIQUE VAUBAN;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Hauts de France
+590052056;GCS GHICL CLINIQUE STE MARIE;Oui;Oui;ES non contrôlé;60;75;62;85;B;Négative;Hauts de France
+590780094;CENTRE LEONARD DE VINCI;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Hauts de France
+590780193;C.H.R.U. DE LILLE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Hauts de France
+590780227;GROUPE HOSPITALIER SECLIN CARVIN;Oui;Oui;ES non contrôlé;60;61.67;48;74;C;Stable;Hauts de France
+590780268;POLYCLINIQUE DU BOIS;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Hauts de France
+590780284;GPT HOPITAUX INSTITUT CATHOLIQUE LILLE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Hauts de France
+590780383;POLYCLINIQUE DE LA LOUVIERE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Hauts de France
+590781415;CENTRE HOSPITALIER DE DUNKERQUE;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Hauts de France
+590781803;CTRE HOSPITALIER SAMBRE-AVESNOIS;Oui;Oui;ES non contrôlé;25;100;100;100;A;Positive;Hauts de France
+590781902;CENTRE HOSPITALIER DE TOURCOING;Oui;Oui;ES non contrôlé;59;88.14;77;95;B;Positive;Hauts de France
+590782165;CENTRE HOSPITALIER DE DENAIN;Oui;Oui;ES non contrôlé;26;84.62;65;96;B;Stable;Hauts de France
+590782215;CENTRE HOSPITALIER VALENCIENNES;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Hauts de France
+590782298;CLINIQUE DU PARC;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Hauts de France
+590782421;CENTRE HOSPITALIER DE ROUBAIX;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Hauts de France
+590782553;HOPITAL PRIVE DE VILLENEUVE D'ASCQ;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Hauts de France
+590782637;CENTRE HOSPITALIER ARMENTIERES;Oui;Oui;ES non contrôlé;25;76;55;91;B;Stable;Hauts de France
+590782652;CENTRE HOSPITALIER D'HAZEBROUCK;Oui;Oui;ES non contrôlé;9;100;;;Effectif < 10;Non Calculable;Hauts de France
+590783239;CENTRE HOSPITALIER DE DOUAI;Oui;Oui;ES non contrôlé;32;78.13;60;91;B;Stable;Hauts de France
+590785374;CLINIQUE TEISSIER;Oui;Oui;ES non contrôlé;1;100;;;Effectif < 10;Non Calculable;Hauts de France
+590788964;POLYCLINIQUE DU PARC;Oui;Oui;ES non contrôlé;42;100;100;100;A;Stable;Hauts de France
+590797353;HOPITAL SAINT VINCENT - SAINT ANTOINE;Oui;Oui;ES non contrôlé;54;96.3;87;99;A;Positive;Hauts de France
+590813176;CLINIQUE DES HETRES;Oui;Oui;ES non contrôlé;16;93.75;70;99;B;Stable;Hauts de France
+590813382;S.A NOUVELLE CLINIQUE VILLETTE;Oui;Oui;ES non contrôlé;59;74.58;62;85;B;Positive;Hauts de France
+590813507;POLYCLINIQUE VAL DE SAMBRE;Oui;Oui;ES non contrôlé;52;34.62;22;49;C;Positive;Hauts de France
+590815056;CLINIQUE DE FLANDRE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Hauts de France
+590816310;CLINIQUE ST AME;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Hauts de France
+590817458;CLINIQUE DE LA VICTOIRE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Hauts de France
+600100168;CENTRE MEDICO-CHIRURGICAL;Oui;Oui;ES non contrôlé;40;85;70;94;B;Positive;Hauts de France
+600100713;CTRE HOSP DE BEAUVAIS;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Hauts de France
+600100721;CH INTERCOMMUNAL COMPIEGNE-NOYON;Oui;Oui;ES non contrôlé;60;70;57;81;B;Négative;Hauts de France
+600100754;POLYCLINIQUE SAINT-COME S. A.;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Hauts de France
+600101984;GROUPE HOSPITALIER PUBLIC DU SUD DE L'OISE;Oui;Oui;ES non contrôlé;60;70;57;81;B;Stable;Hauts de France
+600110175;CLINIQUE DU PARC SAINT LAZARE;Oui;Oui;ES non contrôlé;41;75.61;60;88;B;Positive;Hauts de France
+610006421;CLINIQUE D'ALENCON;Oui;Oui;ES non contrôlé;16;0;0;0;C;Stable;Normandie
+610780082;CENTRE HOSPITALIER ALENCON;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Stable;Normandie
+610780090;CENTRE HOSPITALIER ARGENTAN;Oui;Oui;ES non contrôlé;34;73.53;56;87;B;Stable;Normandie
+610780165;CENTRE HOSPITALIER - FLERS;Oui;Oui;ES non contrôlé;59;71.19;58;82;B;Stable;Normandie
+610780199;CLINIQUE ST DOMINIQUE;Oui;Oui;ES non contrôlé;41;58.54;42;74;C;Négative;Normandie
+620003376;POLYCLINIQUE MED CHIR D'HENIN-BEAUMONT;Oui;Oui;ES non contrôlé;60;75;62;85;B;Négative;Hauts de France
+620006049;CLINIQUE DE ST OMER;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Hauts de France
+620025346;POLYCLINIQUE DE DIVION;Oui;Oui;ES non contrôlé;41;75.61;60;88;B;Stable;Hauts de France
+620100057;CENTRE HOSPITALIER D'ARRAS;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Hauts de France
+620100099;HOPITAL PRIVE ARRAS LES BONNETTES;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Hauts de France
+620100487;CLINIQUE DES ACACIAS;Oui;Oui;ES non contrôlé;29;79.31;60;92;B;Stable;Hauts de France
+620100651;CTRE HOSPITALIER BETHUNE-BEUVRY;Oui;Oui;ES non contrôlé;48;83.33;70;93;B;Négative;Hauts de France
+620100685;CENTRE HOSPITALIER DE LENS;Oui;Oui;ES non contrôlé;60;63.33;50;75;C;Stable;Hauts de France
+620100735;POLYCLINIQUE DE L'ARTOIS;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Hauts de France
+620100750;CLINIQUE AMBROISE PARE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Hauts de France
+620101311;CLINIQUE DES 2 CAPS;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Hauts de France
+620101337;CENTRE HOSPITALIER DE CALAIS;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Hauts de France
+620101360;C.H. REGION DE SAINT-OMER;Oui;Oui;ES non contrôlé;36;94.44;81;99;A;Stable;Hauts de France
+620101501;POLYCLINIQUE DE BOIS-BERNARD S.A;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Positive;Hauts de France
+620103432;CH ARRONDISSEMENT DE MONTREUIL;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Hauts de France
+620103440;CENTRE HOSPITALIER DE BOULOGNE;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Hauts de France
+620118513;CENTRE MCO COTE D'OPALE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Positive;Hauts de France
+630000479;CENTRE REGIONAL JEAN PERRIN;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Auvergne-Rhône-Alpes
+630780211;POLE SANTE REPUBLIQUE - CLERMONT;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Auvergne-Rhône-Alpes
+630780369;CL DE LA PLAINE - CLERMONT;Oui;Oui;ES non contrôlé;28;92.86;76;99;B;Stable;Auvergne-Rhône-Alpes
+630780989;C.H.U. CLERMONT-FERRAND;Oui;Oui;ES non contrôlé;60;75;62;85;B;Stable;Auvergne-Rhône-Alpes
+630781029;CENTRE HOSPITALIER THIERS;Oui;Oui;ES non contrôlé;24;25;10;47;C;Stable;Auvergne-Rhône-Alpes
+630781839;CL CHATAIGNERAIE - BEAUMONT;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Négative;Auvergne-Rhône-Alpes
+640018206;CAPIO CLINIQUE BELHARRA;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Positive;Nouvelle Aquitaine
+640780417;CENTRE HOSPITALIER COTE BASQUE;Oui;Oui;Recueil Validé;60;68.33;55;80;B;Stable;Nouvelle Aquitaine
+640780490;POLYCLINIQUE AGUILERA;Oui;Oui;ES non contrôlé;29;75.86;56;90;B;Stable;Nouvelle Aquitaine
+640780748;POLYCLINIQUE COTE BASQUE SUD;Oui;Oui;ES non contrôlé;48;93.75;83;99;A;Stable;Nouvelle Aquitaine
+640780821;CENTRE HOSPITALIER OLORON;Oui;Oui;ES non contrôlé;21;71.43;48;89;B;Stable;Nouvelle Aquitaine
+640780938;CLINIQUE CHIRURGICALE MARZET;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Nouvelle Aquitaine
+640780946;POLYCLINIQUE DE NAVARRE;Oui;Oui;ES non contrôlé;60;75;62;85;B;Stable;Nouvelle Aquitaine
+640780987;CLINIQUE D'ORTHEZ;Oui;Oui;ES non contrôlé;12;66.67;35;90;B;Stable;Nouvelle Aquitaine
+640781290;CENTRE HOSPITALIER PAU;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Négative;Nouvelle Aquitaine
+650002579;CLINIQUE ORMEAU PYRENEES;Oui;Oui;ES non contrôlé;60;50;37;63;C;Négative;Occitanie
+650780158;CH LOURDES;Oui;Oui;ES non contrôlé;16;87.5;62;99;B;Stable;Occitanie
+650780679;POLYCLINIQUE DE L ORMEAU;Oui;Oui;ES non contrôlé;60;90;79;96;B;Négative;Occitanie
+650783160;CH DE BIGORRE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Occitanie
+660006305;LA CLINIQUE MUTUALISTE CATALANE;Oui;Oui;ES non contrôlé;37;83.78;68;94;B;Positive;Occitanie
+660780180;CH PERPIGNAN;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Occitanie
+660780784;CLINIQUE SAINT PIERRE;Oui;Oui;ES non contrôlé;60;75;62;85;B;Stable;Occitanie
+660790387;POLYCLINIQUE SAINT ROCH;Oui;Oui;Recueil Validé;60;58.33;45;71;C;Stable;Occitanie
+670000033;C.R.L.C.C. PAUL STRAUSS DE STRASBOURG;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Grand Est
+670017755;GROUPE HOSPITALIER SELESTAT OBERNAI;Oui;Oui;ES non contrôlé;27;100;100;100;A;Non Calculable;Grand Est
+670018068;CLINIQUE RHENA GCS;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Non Calculable;Grand Est
+670780055;HOPITAUX UNIVERSITAIRES DE STRASBOURG;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Grand Est
+670780170;CLINIQUE DE L'ORANGERIE STRASB.;Oui;Oui;ES non contrôlé;60;15;7;27;C;Négative;Grand Est
+670780188;CLINIQUE SAINTE-BARBE - GHSV;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Grand Est
+670780212;CLINIQUE SAINTE-ANNE - GHSV;Oui;Oui;ES non contrôlé;60;95;86;99;A;Positive;Grand Est
+670780337;CENTRE HOSPITALIER DE HAGUENAU;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Grand Est
+670780345;CENTRE HOSPITALIER DE SAVERNE;Oui;Oui;ES non contrôlé;52;90.38;79;97;B;Stable;Grand Est
+670780378;CLINIQUE SAINT-FRANCOIS HAGUENAU;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Grand Est
+670780386;CLINIQUE SAINTE ODILE HAGUENAU;Oui;Oui;ES non contrôlé;60;80;68;89;B;Positive;Grand Est
+680000320;CLINIQUE DIACONAT FONDERIE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Grand Est
+680000494;CLINIQUE DIACONAT ROOSEVELT;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Grand Est
+680000973;CENTRE HOSPITALIER DE COLMAR;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Grand Est
+680001195;HOPITAL ALBERT SCHWEITZER;Oui;Oui;ES non contrôlé;30;96.67;83;99;A;Stable;Grand Est
+680020088;NOUVELLE CLINIQUE DES TROIS FRONTIERES;Oui;Oui;ES non contrôlé;12;16.67;2;48;C;Négative;Grand Est
+680020336;GRPE HOSP REGION MULHOUSE & SUD ALSACE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Grand Est
+690000880;CENTRE LEON BERARD;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Auvergne-Rhône-Alpes
+690022959;HOP PRIVE MERE ENFANT NATECIA;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Auvergne-Rhône-Alpes
+690023411;HOPITAL PRIVE JEAN MERMOZ;Oui;Oui;ES non contrôlé;60;95;86;99;A;Positive;Auvergne-Rhône-Alpes
+690780093;HÔPITAL D'INSTRUCTION DES ARMÉES DESGENETTES;Oui;Oui;ES non contrôlé;10;80;44;98;B;Stable;Service de santé des armées
+690780358;CLINIQUE DU VAL D'OUEST-VENDOME;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Auvergne-Rhône-Alpes
+690780366;CLINIQUE CHARCOT;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Auvergne-Rhône-Alpes
+690780382;CLINIQUE DU GRAND-LARGE;Oui;Oui;ES non contrôlé;60;63.33;50;75;C;Stable;Auvergne-Rhône-Alpes
+690780390;POLYCLINIQUE DE RILLIEUX;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Auvergne-Rhône-Alpes
+690780416;GROUPE HOSPITALIER MUTUALISTE LES PORTES DU SUD;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Auvergne-Rhône-Alpes
+690780648;CLINIQUE DE LA SAUVEGARDE;Oui;Oui;ES non contrôlé;60;80;68;89;B;Positive;Auvergne-Rhône-Alpes
+690780655;HÔPITAL PRIVE DE L'EST LYONNAIS;Oui;Oui;ES non contrôlé;21;100;100;100;A;Stable;Auvergne-Rhône-Alpes
+690780663;CLINIQUE TRENEL;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Auvergne-Rhône-Alpes
+690781836;CLINIQUE MUTUALISTE EUGENE ANDRE;Oui;Oui;ES non contrôlé;46;80.43;66;91;B;Stable;Auvergne-Rhône-Alpes
+690782222;HOPITAL NORD OUEST - VILLEFRANCHE;Oui;Oui;ES non contrôlé;60;80;68;89;B;Négative;Auvergne-Rhône-Alpes
+690782834;CLINIQUE DU TONKIN;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;Auvergne-Rhône-Alpes
+690783154;HOPITAL EDOUARD HERRIOT;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Auvergne-Rhône-Alpes
+690784137;CH LYON SUD;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Auvergne-Rhône-Alpes
+690784152;HOPITAL DE LA CROIX-ROUSSE;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Négative;Auvergne-Rhône-Alpes
+690784178;HOPITAL NEURO PIERRE WERTHEIMER;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Auvergne-Rhône-Alpes
+690793468;INFIRMERIE PROTESTANTE DE LYON;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Auvergne-Rhône-Alpes
+690805361;CENTRE HOSPITALIER ST JOSEPH ST LUC;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Auvergne-Rhône-Alpes
+690807367;POLYCLINIQUE DU BEAUJOLAIS;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Auvergne-Rhône-Alpes
+700004591;GROUPE HOSPITALIER DE LA HAUTE SAONE;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Bourgogne-Franche-Comté
+710006859;POLYCLINIQUE DU VAL DE SAONE;Oui;Oui;ES non contrôlé;60;58.33;45;71;C;Positive;Bourgogne-Franche-Comté
+710780263;CH LES CHANAUX MACON;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Bourgogne-Franche-Comté
+710780644;CENTRE HOSPITALIER DE PARAY;Oui;Oui;ES non contrôlé;60;65;52;77;C;Stable;Bourgogne-Franche-Comté
+710780917;HOPITAL PRIVE SAINTE MARIE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Bourgogne-Franche-Comté
+710780958;CENTRE HOSPITALIER WILLIAM MOREY;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Bourgogne-Franche-Comté
+710976705;CENTRE HOSPITALIER JEAN BOUVERI - GALUZOT;Oui;Oui;ES non contrôlé;25;92;74;99;B;Stable;Bourgogne-Franche-Comté
+710978347;HOTEL-DIEU DU CREUSOT;Oui;Oui;ES non contrôlé;60;45;32;58;C;Positive;Bourgogne-Franche-Comté
+720000025;CENTRE HOSPITALIER LE MANS;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Pays de la Loire
+720000199;SA CLINIQUE CHIR. LE PRE-PASTEUR;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;Pays de la Loire
+720000231;CLINIQUE DU TERTRE ROUGE;Oui;Oui;ES non contrôlé;25;96;80;99;B;Stable;Pays de la Loire
+720000249;CLINIQUE VICTOR HUGO;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Pays de la Loire
+720016724;POLE SANTE SARTHE ET LOIR;Oui;Oui;ES non contrôlé;47;55.32;40;70;C;Stable;Pays de la Loire
+720017748;POLE SANTE SUD SITE CMCM;Oui;Oui;ES non contrôlé;60;75;62;85;B;Stable;Pays de la Loire
+730000015;CENTRE HOSPITALIER METROPOLE SAVOIE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+730002839;C.H.I. ALBERTVILLE MOUTIERS;Oui;Oui;ES non contrôlé;17;82.35;57;96;B;Non Calculable;Auvergne-Rhône-Alpes
+730004298;HOPITAL PRIVE MEDIPOLE DE SAVOIE;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+740001839;CHI DES HOPITAUX DU PAYS DU MONT BLANC;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+740014345;HOPITAL PRIVE PAYS DE SAVOIE;Oui;Oui;ES non contrôlé;58;37.93;25;52;C;Stable;Auvergne-Rhône-Alpes
+740780192;CENTRE MEDICAL DE PRAZ COUTANT;Oui;Oui;ES non contrôlé;35;97.14;85;99;A;Stable;Auvergne-Rhône-Alpes
+740780416;CLINIQUE DU LAC ET D'ARGONAY;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Auvergne-Rhône-Alpes
+740780424;CLINIQUE GENERALE ANNECY;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Auvergne-Rhône-Alpes
+740781133;CH ANNECY-GENEVOIS;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Auvergne-Rhône-Alpes
+740790258;CENTRE HOSPITALIER ALPES-LEMAN;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Auvergne-Rhône-Alpes
+740790381;C.H.I. DU LEMAN;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Auvergne-Rhône-Alpes
+750000523;GROUPE HOSPITALIER PARIS SAINT-JOSEPH;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Ile de France
+750000549;FONDATION OPHTALMOLOGIQUE ROTHSCHILD;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Ile de France
+750006728;GROUPE HOSPITALIER DIACONESSES-CROIX SAINT-SIMON;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Ile de France
+750100042;HU-SAINT LOUIS SITE LARIBOISIERE-APHP;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+750100075;HOPITAL SAINT-LOUIS;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Ile de France
+750100091;HOPITAL SAINT-ANTOINE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+750100109;HOPITAL TROUSSEAU;Oui;Oui;ES non contrôlé;37;64.86;47;80;B;Négative;Ile de France
+750100125;GROUPE HOSPITALIER PITIE-SALPETRIERE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Ile de France
+750100166;HOPITAL COCHIN/ST VINCENT DE PAUL;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Ile de France
+750100208;HOPITAL NECKER ENFANTS MALADES;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Ile de France
+750100232;GIH BICHAT/CLAUDE BERNARD;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Négative;Ile de France
+750100273;HOPITAL TENON;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Ile de France
+750110025;CNO QUINZE VINGTS;Oui;Oui;ES non contrôlé;6;100;;;Effectif < 10;Non Calculable;Ile de France
+750140014;CENTRE HOSPITALIER SAINTE-ANNE;Oui;Oui;ES non contrôlé;46;95.65;85;99;A;Stable;Ile de France
+750150104;INSTITUT MUTUALISTE MONTSOURIS;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Ile de France
+750160012;CLCC INSTITUT CURIE;Oui;Oui;ES non contrôlé;60;65;52;77;C;Négative;Ile de France
+750300071;CLINIQUE GEOFFROY ST HILAIRE;Oui;Oui;ES non contrôlé;53;56.6;42;70;C;Stable;Ile de France
+750300097;INSTITUT ARTHUR VERNES;Oui;Oui;ES non contrôlé;3;0;;;Effectif < 10;Non Calculable;Ile de France
+750300121;FOND ST JEAN DE DIEU CLINIQUE OUDINOT;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Ile de France
+750300139;CLINIQUE DE L ALMA;Oui;Oui;ES non contrôlé;60;63.33;50;75;C;Stable;Ile de France
+750300154;CLINIQUE TURIN;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Ile de France
+750300360;HOPITAL PRIVE DES PEUPLIERS;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Ile de France
+750300493;CLINIQUE ARAGO;Oui;Oui;ES non contrôlé;0;;;;;;Ile de France
+750300550;CLINIQUE SAINTE GENEVIEVE;Oui;Oui;ES non contrôlé;4;75;;;Effectif < 10;Non Calculable;Ile de France
+750300592;CLINIQUE BLOMET;Oui;Oui;ES non contrôlé;18;88.89;65;99;B;Stable;Ile de France
+750300766;CLINIQUE BIZET;Oui;Oui;ES non contrôlé;60;70;57;81;B;Négative;Ile de France
+750300840;CLINIQUE DE LA MUETTE;Oui;Oui;ES non contrôlé;47;89.36;77;97;B;Stable;Ile de France
+750300881;CLINIQUE DU TROCADERO;Oui;Oui;ES non contrôlé;6;83.33;;;Effectif < 10;Non Calculable;Ile de France
+750300915;CLINIQUE INTERNATIONALE PARC MONCEAU;Oui;Oui;ES non contrôlé;27;100;100;100;A;Stable;Ile de France
+750301137;CLINIQUE ALLERAY LABROUSTE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Ile de France
+750803447;HOPITAL EUROPEEN G. POMPIDOU/BROUSSAIS;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Ile de France
+750803454;HOPITAL ROBERT DEBRE;Oui;Oui;ES non contrôlé;47;87.23;74;95;B;Stable;Ile de France
+760000166;CRLCC HENRI BECQUEREL;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Normandie
+760021329;HOPITAL PRIVE DE L'ESTUAIRE;Oui;Oui;ES non contrôlé;60;85;73;93;B;Positive;Normandie
+760024042;CHI ELBEUF LOUVIERS;Oui;Oui;ES non contrôlé;60;61.67;48;74;C;Stable;Normandie
+760025312;CLINIQUE MATHILDE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Normandie
+760027292;POLYCLINIQUE MEGIVAL;Oui;Oui;ES non contrôlé;45;86.67;73;95;B;Stable;Normandie
+760780023;CENTRE HOSPITALIER DE DIEPPE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Normandie
+760780197;CLINIQUE LES AUBEPINES;Oui;Oui;ES non contrôlé;27;100;100;100;A;Stable;Normandie
+760780205;CLINIQUE SAINT ANTOINE;Oui;Oui;ES non contrôlé;51;100;100;100;A;Positive;Normandie
+760780239;C H U ROUEN;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Normandie
+760780510;CLINIQUE DU CEDRE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Normandie
+760780619;CLINIQUE SAINT HILAIRE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Normandie
+760780726;CH DU HAVRE;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Normandie
+760780783;CLINIQUE TOUS VENTS;Oui;Oui;ES non contrôlé;9;0;;;Effectif < 10;Non Calculable;Normandie
+760780791;CLINIQUE DES ORMEAUX;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Positive;Normandie
+760780825;CLINIQUE DE L'ABBAYE;Oui;Oui;ES non contrôlé;15;100;100;100;A;Stable;Normandie
+760921809;CLINIQUE DE L'EUROPE;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Normandie
+770020477;HOP FORCILLES - FONDATION COGNACQ JAY;Oui;Oui;ES non contrôlé;25;100;100;100;A;Stable;Ile de France
+770021145;GRAND HOPITAL DE L'EST FRANCILIEN;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Non Calculable;Ile de France
+770021152;CENTRE HOSPITALIER SUD SEINE ET MARNE;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Non Calculable;Ile de France
+770110054;GRPE HOSPITALIER DU SUD ILE DE FRANCE;Oui;Oui;ES non contrôlé;14;100;100;100;A;Stable;Ile de France
+770110070;CENTRE HOSPITALIER LEON BINET PROVINS;Oui;Oui;ES non contrôlé;37;70.27;53;84;B;Positive;Ile de France
+770300010;HOPITAL PRIVE DE MARNE CHANTEREINE;Oui;Oui;ES non contrôlé;49;55.1;40;69;C;Négative;Ile de France
+770300143;POLYCLINIQUE SAINT JEAN;Oui;Oui;ES non contrôlé;60;66.67;53;78;C;Négative;Ile de France
+770300192;CLINIQUE ST BRICE;Oui;Oui;ES non contrôlé;23;17.39;5;39;C;Non Calculable;Ile de France
+770300275;POLYCLINIQUE DE LA FORET;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Ile de France
+770300283;CLINIQUE CHIRURGICALE ERMITAGE;Oui;Oui;ES non contrôlé;60;21.67;12;34;C;Négative;Ile de France
+770790707;CLINIQUE DE TOURNAN;Oui;Oui;ES non contrôlé;35;97.14;85;99;A;Positive;Ile de France
+770813400;CLINIQUE SAINT FARON;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Ile de France
+780001236;CHI DE POISSY ST-GERMAIN;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Ile de France
+780002697;CHI DE MEULAN LES MUREAUX;Oui;Oui;ES non contrôlé;24;70.83;49;87;B;Stable;Ile de France
+780018727;CLINIQUE SAINT GERMAIN;Oui;Oui;ES non contrôlé;33;87.88;72;97;B;Stable;Ile de France
+780110011;CH FRANCOIS QUESNAY MANTES LA JOLIE;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Ile de France
+780110052;CH DE RAMBOUILLET;Oui;Oui;ES non contrôlé;21;85.71;64;97;B;Stable;Ile de France
+780110078;CH DE VERSAILLES;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Négative;Ile de France
+780150066;CLINIQUE MEDICALE PORTE VERTE;Oui;Oui;ES non contrôlé;0;;;;;;Ile de France
+780300125;POLYCLINIQUE LA REGION MANTAISE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+780300208;CLINIQUE SAINT LOUIS;Oui;Oui;ES non contrôlé;42;66.67;50;80;B;Stable;Ile de France
+780300323;CLINIQUE DES FRANCISCAINES;Oui;Oui;ES non contrôlé;47;72.34;57;84;B;Stable;Ile de France
+780300364;CLINIQUE DU CHATEAU DE LA MAYE;Oui;Oui;ES non contrôlé;5;0;;;Effectif < 10;Non Calculable;Ile de France
+780300406;CTRE MEDICO CHIRUR. DE PARLY II;Oui;Oui;ES non contrôlé;30;90;73;98;B;Stable;Ile de France
+780300414;CTRE MEDICO-CHIRURGICAL EUROPE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Ile de France
+780300422;HOPITAL PRIVE OUEST;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;Ile de France
+790000012;CENTRE HOSPITALIER DE NIORT;Oui;Oui;Recueil Validé;60;68.33;55;80;B;Stable;Nouvelle Aquitaine
+790006654;CTRE HOSPIT. NORD DEUX-SEVRES;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Positive;Nouvelle Aquitaine
+790009948;POLYCLINIQUE INKERMANN;Oui;Oui;ES non contrôlé;60;61.67;48;74;C;Négative;Nouvelle Aquitaine
+800000028;CTRE HOSP D'ABBEVILLE;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Hauts de France
+800000044;C.H.U. D'AMIENS;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Hauts de France
+800002503;SA SAINTE ISABELLE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Hauts de France
+800009466;POLYCLINIQUE DE PICARDIE;Oui;Oui;ES non contrôlé;60;35;23;48;C;Positive;Hauts de France
+800009920;SA CLINIQUE VICTOR PAUCHET;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Hauts de France
+800013179;SAS CLINIQUE DE L'EUROPE;Oui;Oui;ES non contrôlé;45;31.11;18;47;C;Négative;Hauts de France
+810000224;CMCO CLAUDE BERNARD;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Occitanie
+810000331;CH ALBI;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Occitanie
+810000380;CHIC CASTRES-MAZAMET;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Occitanie
+810101170;CLINIQUE TOULOUSE LAUTREC;Oui;Oui;ES non contrôlé;60;55;42;68;C;Positive;Occitanie
+810101444;CLINIQUE DU SIDOBRE;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Négative;Occitanie
+820000016;CH MONTAUBAN;Oui;Oui;ES non contrôlé;41;100;100;100;A;Stable;Occitanie
+820000040;CLINIQUE CROIX SAINT MICHEL;Oui;Oui;ES non contrôlé;20;95;75;99;B;Positive;Occitanie
+820000057;CLINIQUE DU PONT DE CHAUME;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Occitanie
+820000065;CLINIQUE DU DOCTEUR CAVE;Oui;Oui;ES non contrôlé;9;100;;;Effectif < 10;Non Calculable;Occitanie
+830100103;CLINIQUE STE MARGUERITE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;PACA
+830100251;CLINIQUE DU CAP D'OR;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;PACA
+830100319;POLYCLINIQUE LES FLEURS;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;PACA
+830100327;CLINIQUE LES LAURIERS;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Positive;PACA
+830100392;POLYCLINIQUE NOTRE DAME;Oui;Oui;ES non contrôlé;38;97.37;86;99;A;Stable;PACA
+830100418;CLINIQUE NOTRE DAME DE LA MERCI;Oui;Oui;ES non contrôlé;12;41.67;15;72;C;Non Calculable;PACA
+830100434;CLINIQUE SAINT JEAN;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;PACA
+830100459;CLINIQUE SAINT MICHEL;Oui;Oui;ES non contrôlé;33;90.91;76;98;B;Stable;PACA
+830100517;CH DE BRIGNOLES;Oui;Oui;ES non contrôlé;14;85.71;57;98;B;Stable;PACA
+830100525;CH DE DRAGUIGNAN;Oui;Oui;ES non contrôlé;60;58.33;45;71;C;Négative;PACA
+830100533;CH DE HYERES;Oui;Oui;ES non contrôlé;18;66.67;41;87;B;Stable;PACA
+830100566;CHI FREJUS;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;PACA
+830100574;HÔPITAL D'INSTRUCTION DES ARMÉES SAINTE-ANNE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Service de santé des armées
+830100616;CHI TOULON;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;PACA
+830200523;POLYCLINIQUE HENRI MALARTIC;Oui;Oui;ES non contrôlé;40;87.5;73;96;B;Stable;PACA
+840000087;CH LOUIS GIORGI D'ORANGE;Oui;Oui;ES non contrôlé;16;81.25;54;96;B;Stable;PACA
+840000285;POLYCLINIQUE URBAIN V;Oui;Oui;ES non contrôlé;60;88.33;77;95;B;Stable;PACA
+840000350;CLINIQUE SAINTE CATHERINE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;PACA
+840000400;CENTRE CHIRURGICAL ST ROCH;Oui;Oui;ES non contrôlé;14;71.43;42;92;B;Stable;PACA
+840000467;CAPIO CLINIQUE D'ORANGE;Oui;Oui;ES non contrôlé;60;65;52;77;C;Stable;PACA
+840006597;CH HENRI DUFFAUT AVIGNON;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;PACA
+840013312;CLINIQUE RHONE DURANCE;Oui;Oui;ES non contrôlé;60;66.67;53;78;C;Stable;PACA
+840017172;SYNERGIA POLYCLINIQUE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;PACA
+840019053;GCS UNITE SENOLOGIQUE VENTOUX;Oui;Oui;ES non contrôlé;16;62.5;35;85;B;Négative;PACA
+850000019;CENTRE HOSPITALIER LA ROCHE/YON - MONTAIGU - LUCON;Oui;Oui;Recueil Validé;60;80;68;89;B;Stable;Pays de la Loire
+850000084;CTRE HOSPITALIER LES SABLES D'O.;Oui;Oui;ES non contrôlé;25;92;74;99;B;Stable;Pays de la Loire
+850000118;CLINIQUE SAINT CHARLES;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Pays de la Loire
+850000126;CLINIQUE SUD VENDEE;Oui;Oui;ES non contrôlé;56;73.21;60;84;B;Stable;Pays de la Loire
+850000134;CLINIQUE CHIRURGICALE PORTE OCEANE;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Pays de la Loire
+850009010;CHI LOIRE VENDEE OCEAN;Oui;Oui;ES non contrôlé;30;83.33;65;94;B;Stable;Pays de la Loire
+860010321;POLYCLINIQUE DE POITIERS;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Négative;Nouvelle Aquitaine
+860013382;GROUPE HOSPITALIER NORD-VIENNE;Oui;Oui;ES non contrôlé;60;61.67;48;74;C;Stable;Nouvelle Aquitaine
+860014208;CENTRE HOSP. REGIONAL DE POITIERS;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Non Calculable;Nouvelle Aquitaine
+860780311;CLINIQUE DE CHATELLERAULT;Oui;Oui;ES non contrôlé;53;84.91;72;93;B;Négative;Nouvelle Aquitaine
+860780568;CLINIQUE FIEF DE GRIMOIRE;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Nouvelle Aquitaine
+870000015;CHU LIMOGES;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Nouvelle Aquitaine
+870000023;CENTRE HOSPITALIER ST JUNIEN;Oui;Oui;ES non contrôlé;35;100;100;100;A;Stable;Nouvelle Aquitaine
+870000288;CLINIQUE FRANÇOIS CHENIEUX;Oui;Oui;Recueil Validé;60;66.67;53;78;C;Stable;Nouvelle Aquitaine
+870000411;CLINIQUE EMAILLEURS-COLOMBIER LIMOGES;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Nouvelle Aquitaine
+880007059;CHI EMILE DURKHEIM EPINAL;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Grand Est
+880780077;CENTRE HOSPITALIER - SAINT DIE;Oui;Oui;ES non contrôlé;27;96.3;81;99;A;Stable;Grand Est
+880780093;CENTRE HOSPITALIER - REMIREMONT;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Grand Est
+880788591;POLYCLINIQUE LA LIGNE BLEUE;Oui;Oui;ES non contrôlé;60;60;47;72;C;Stable;Grand Est
+890000037;CH AUXERRE;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Bourgogne-Franche-Comté
+890000169;CLINIQUE PAUL PIQUET;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Positive;Bourgogne-Franche-Comté
+890002389;POLYCLINIQUE STE MARGUERITE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Positive;Bourgogne-Franche-Comté
+890970569;CENTRE HOSPITALIER SENS;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Bourgogne-Franche-Comté
+900000035;S.A CLINIQUE LA MIOTTE;Oui;Oui;ES non contrôlé;30;43.33;25;63;C;Négative;Bourgogne-Franche-Comté
+900000365;HOPITAL NORD FRANCHE COMTE;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Stable;Bourgogne-Franche-Comté
+910002773;CH SUD-FRANCILIEN;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+910019447;CHI SUD ESSONNE-DOURDAN-ETAMPES;Oui;Oui;ES non contrôlé;60;50;37;63;C;Stable;Ile de France
+910110055;CENTRE HOSPITALIER DES DEUX VALLEES;Oui;Oui;ES non contrôlé;60;65;52;77;C;Négative;Ile de France
+910150028;CENTRE HOSPITALIER DE BLIGNY;Oui;Oui;ES non contrôlé;47;80.85;67;91;B;Stable;Ile de France
+910300011;CLINIQUE DES CHARMILLES;Oui;Oui;ES non contrôlé;7;14.29;;;Effectif < 10;Non Calculable;Ile de France
+910300144;CTRE MEDICO-CHIRURGICAL ET OBST;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Stable;Ile de France
+910300177;CLINIQUE DE L'YVETTE;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Ile de France
+910300219;INSTITUT HOSP. JACQUES CARTIER;Oui;Oui;ES non contrôlé;60;100;100;100;A;Positive;Ile de France
+910300300;HOPITAL PRIVE DU VAL D'YERRES;Oui;Oui;ES non contrôlé;18;100;100;100;A;Non Calculable;Ile de France
+910300326;CLINIQUE PASTEUR;Oui;Oui;ES non contrôlé;8;25;;;Effectif < 10;Non Calculable;Ile de France
+910300359;CLINIQUE CARON;Oui;Oui;ES non contrôlé;24;25;10;47;C;Négative;Ile de France
+910803543;C.H.P CLAUDE GALIEN;Oui;Oui;ES non contrôlé;60;65;52;77;C;Positive;Ile de France
+910805357;CLINIQUE DE L ESSONNE;Oui;Oui;ES non contrôlé;23;21.74;7;44;C;Stable;Ile de France
+920000460;CLCC RENE HUGUENIN INSTITUT CURIE;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Non Calculable;Ile de France
+920000643;INSTITUT HOSPITALIER FRANCO-BRITANIQUE - SITE KLEB;Oui;Oui;ES non contrôlé;60;70;57;81;B;Stable;Ile de France
+920000650;CENTRE MEDICO CHIRURGICAL FOCH;Oui;Oui;ES non contrôlé;60;70;57;81;B;Stable;Ile de France
+920000684;CENTRE CHIRURGICAL MARIE LANNELONGUE;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Ile de France
+920100013;HOPITAL AMBROISE PARE;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Ile de France
+920100021;HOPITAL ANTOINE BECLERE;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Stable;Ile de France
+920100039;HOPITAL BEAUJON;Oui;Oui;ES non contrôlé;60;58.33;45;71;C;Stable;Ile de France
+920100047;HOPITAL LOUIS MOURIER;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Négative;Ile de France
+920120011;HOPITAL D'INSTRUCTION DES ARMEES PERCY;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Service de santé des armées
+920300043;HOPITAL PRIVE D ANTONY;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+920300191;C.C.B.B. MARCEL SEMBAT;Oui;Oui;ES non contrôlé;53;100;100;100;A;Stable;Ile de France
+920300365;CLINIQUE LA MONTAGNE;Oui;Oui;ES non contrôlé;0;;;;;;Ile de France
+920300415;CLINIQUE LAMBERT;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Négative;Ile de France
+920300597;CLINIQUE DE MEUDON LA FORET;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+920300787;HOPITAL AMERICAIN;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Ile de France
+920300936;CENTRE CHIRURGICAL VAL D'OR;Oui;Oui;ES non contrôlé;60;55;42;68;C;Stable;Ile de France
+920301033;CLINIQUE DE LA PORTE DE ST CLOUD;Oui;Oui;ES non contrôlé;12;100;100;100;A;Stable;Ile de France
+930021480;GHI LE RAINCY-MONTFERMEIL;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Ile de France
+930100037;HOPITAL AVICENNE;Oui;Oui;ES non contrôlé;60;86.67;75;94;B;Stable;Ile de France
+930100045;HOPITAL JEAN VERDIER;Oui;Oui;ES non contrôlé;44;100;100;100;A;Stable;Ile de France
+930110036;CTRE HOSP. ANDRE GREGOIRE;Oui;Oui;ES non contrôlé;27;92.59;76;99;B;Stable;Ile de France
+930110051;CH DE ST DENIS;Oui;Oui;ES non contrôlé;46;73.91;59;86;B;Stable;Ile de France
+930110069;C.H. ROBERT BALLANGER;Oui;Oui;ES non contrôlé;60;85;73;93;B;Stable;Ile de France
+930300025;HOPITAL EUROPEEN LA ROSERAIE;Oui;Oui;ES non contrôlé;40;100;100;100;A;Stable;Ile de France
+930300066;CLINIQUE D AULNAY;Oui;Oui;ES non contrôlé;60;100;100;100;A;Stable;Ile de France
+930300082;CENTRE CHIRURGICAL FLOREAL;Oui;Oui;ES non contrôlé;5;0;;;Effectif < 10;Non Calculable;Ile de France
+930300116;HOPITAL PRIVE DE SEINE ST DENIS;Oui;Oui;ES non contrôlé;60;95;86;99;A;Stable;Ile de France
+930300298;POLYCLINIQUE VAUBAN;Oui;Oui;ES non contrôlé;57;94.74;85;99;A;Stable;Ile de France
+930300553;CLINIQUE DE L'ESTREE;Oui;Oui;ES non contrôlé;60;70;57;81;B;Négative;Ile de France
+930300587;CLINIQUE DU LANDY;Oui;Oui;ES non contrôlé;10;90;55;99;B;Non Calculable;Ile de France
+930300595;CLINIQUE DU VERT GALANT;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Négative;Ile de France
+930300645;CENTRE CARDIOLOGIQUE DU NORD;Oui;Oui;ES non contrôlé;14;78.57;49;95;B;Stable;Ile de France
+940000649;HOPITAL SAINT-CAMILLE;Oui;Oui;ES non contrôlé;55;100;100;100;A;Positive;Ile de France
+940000664;INSTITUT GUSTAVE ROUSSY;Oui;Oui;ES non contrôlé;60;90;79;96;B;Stable;Ile de France
+940006679;HÔPITAL PRIVÉ DE MARNE-LA-VALLÉE;Oui;Oui;ES non contrôlé;40;65;48;79;C;Stable;Ile de France
+940100027;HOPITAL HENRI MONDOR;Oui;Oui;ES non contrôlé;60;93.33;84;98;A;Stable;Ile de France
+940100043;HOPITAL DE BICETRE;Oui;Oui;ES non contrôlé;60;55;42;68;C;Négative;Ile de France
+940100068;HOPITAL PAUL BROUSSE;Oui;Oui;ES non contrôlé;60;68.33;55;80;B;Stable;Ile de France
+940110018;CHI DE CRETEIL;Oui;Oui;ES non contrôlé;60;76.67;64;87;B;Stable;Ile de France
+940110042;CHI DE VILLENEUVE ST GEORGES;Oui;Oui;ES non contrôlé;45;80;65;90;B;Négative;Ile de France
+940120017;HOPITAL D'INSTRUCTION DES ARMEES BEGIN;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Service de santé des armées
+940300031;HOPITAL PRIVE PAUL D'EGINE;Oui;Oui;ES non contrôlé;60;83.33;71;92;B;Négative;Ile de France
+940300270;HOPITAL PRIVE ARMAND BRILLARD;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Négative;Ile de France
+940300379;CLINIQUE GASTON METIVET;Oui;Oui;ES non contrôlé;52;82.69;70;92;B;Stable;Ile de France
+940300445;HOPITAL PRIVE DE THIAIS;Oui;Oui;ES non contrôlé;0;;;;;;Ile de France
+940300494;POLYCL. DE VILLENEUVE ST GEORGES;Oui;Oui;ES non contrôlé;41;100;100;100;A;Stable;Ile de France
+940300569;HOPITAL PRIVE DE VITRY SITE PASTEUR;Oui;Oui;ES non contrôlé;13;100;100;100;A;Positive;Ile de France
+940813033;CLINIQUE DE BERCY;Oui;Oui;ES non contrôlé;34;61.76;44;78;C;Stable;Ile de France
+950013870;GHEM EAUBONNE MONTMORENCY SIMONE VEIL;Oui;Oui;ES non contrôlé;60;91.67;82;97;A;Stable;Ile de France
+950110015;CH VICTOR DUPOUY ARGENTEUIL;Oui;Oui;ES non contrôlé;60;75;62;85;B;Stable;Ile de France
+950110049;CH DE GONESSE;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Négative;Ile de France
+950110080;CENTRE HOSPITALIER RENE DUBOS PONTOISE;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Négative;Ile de France
+950300202;CLINIQUE CONTI;Oui;Oui;ES non contrôlé;60;80;68;89;B;Stable;Ile de France
+950300244;CLINIQUE SAINTE MARIE;Oui;Oui;ES non contrôlé;60;96.67;88;99;A;Positive;Ile de France
+950300277;HOPITAL PRIVE NORD PARISIEN;Oui;Oui;ES non contrôlé;60;98.33;91;99;A;Positive;Ile de France
+950807982;CLINIQUE CLAUDE BERNARD;Oui;Oui;ES non contrôlé;60;78.33;66;88;B;Stable;Ile de France
+970100178;CENTRE HOSPITALIER DE LA BASSE TERRE;Oui;Oui;Recueil Validé;41;90.24;77;97;B;Stable;Guadeloupe
+970100228;C.H.U. DE POINTE-A-PITRE/ABYMES;Oui;Oui;ES non contrôlé;60;73.33;60;84;B;Stable;Guadeloupe
+970202313;CLINIQUE SAINT PAUL;Oui;Oui;ES non contrôlé;60;65;52;77;C;Stable;Martinique
+970202321;S. A. CLINIQUE SAINTE MARIE;Oui;Oui;Recueil Validé;60;45;32;58;C;Positive;Martinique
+970211207;CHU DE MARTINIQUE;Oui;Oui;ES non contrôlé;60;55;42;68;C;Stable;Martinique
+970300265;CENTRE MED.-CHIRURG. DE KOUROU;Oui;Oui;Recueil Validé;44;81.82;67;92;B;Stable;Guyane
+970302022;CENTRE HOSPITALIER DE CAYENNE;Oui;Oui;ES non contrôlé;14;42.86;18;71;C;Négative;Guyane
+970403606;GROUPE HOSPITALIER EST REUNION;Oui;Oui;ES non contrôlé;17;82.35;57;96;B;Stable;Océan Indien
+970404844;CLINIQUE SAINT-VINCENT;Oui;Oui;Recueil Validé;12;75;43;95;B;Positive;Océan Indien
+970408589;CENTRE HOSPITALIER REGIONAL REUNION;Oui;Oui;ES non contrôlé;60;71.67;59;83;B;Stable;Océan Indien
+970421038;CENTRE HOSPITALIER GABRIEL MARTIN;Oui;Oui;Recueil Validé;32;81.25;64;93;B;Stable;Océan Indien
+970462073;CLINIQUE DURIEUX;Oui;Oui;Recueil Validé;30;66.67;47;83;B;Stable;Océan Indien
+970462081;CLINIQUE DES ORCHIDÉES;Oui;Oui;Recueil Validé;60;86.67;75;94;B;Stable;Océan Indien
+970462107;CLINIQUE SAINTE CLOTILDE;Oui;Oui;ES non contrôlé;60;81.67;70;91;B;Stable;Océan Indien

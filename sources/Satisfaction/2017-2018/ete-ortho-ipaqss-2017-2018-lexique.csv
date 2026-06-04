@@ -1,0 +1,9 @@
+NAME;LABEL
+finess;finess juridique
+rs;finess juridique - raison sociale
+region;Région
+ete_ortho_cible_etbt;Nombre de séjours concernés
+ete_ortho_obs_etbt;Nombre d'ETE observé
+ete_ortho_att_etbt;Nombre d'ETE attendu
+ete_ortho_etbt;Ratio observé / attendu
+ete_ortho_pos_seuil_etbt;Position dans le funel plot (3ds) <3ds --> A /  >3ds -> C / sinon B

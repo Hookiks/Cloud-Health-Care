@@ -1,0 +1,26 @@
+Nom de la variable;Libellé de la variable
+Depot;Dépot d'au moins une adresse mail valide
+classement;Classe A : >= à 77.3, Classe B : >= à 74 et < à 77.3,Classe C : >= à 70.7 et < à 74,Classe D : < à 70.7, DI : moins de 30 réponses exploitables, NR : non répondant, NV : Non validé
+evolution;Changement de classe entre 2018 et 2019
+finess;finess juridique
+finess_geo;finess géographique
+nb_reco_brut;Nombre de patients recommandant certainement l’établissement
+nb_rep_score_PECinf_rea_ajust;N réponses - Satisfaction de la prise en charge infirmiers/aides-soignants
+nb_rep_score_PECmed_rea_ajust;N réponses - Satisfaction de la prise en charge par les médecins/chirurgiens
+nb_rep_score_accueil_rea_ajust;N réponses - Satisfaction de l'accueil
+nb_rep_score_all_rea_ajust;N réponses - Satisfaction globale des patients
+nb_rep_score_chambre_rea_ajust;N réponses - Satisfaction de la chambre
+nb_rep_score_repas_rea_ajust;N réponses - Satisfaction des repas
+nb_rep_score_sortie_rea_ajust;N réponses - Satisfaction de la sortie
+participation;Participation obligatoire ou facultative
+region;Région
+rs_finess;finess juridique - raison sociale
+rs_finess_geo;finess géographique - raison sociale
+score_PECinf_rea_ajust;Note ajustée de satisfaction de la prise en charge infirmiers/aides-soignants
+score_PECmed_rea_ajust;Note ajustée de satisfaction de la prise en charge par les médecins/chirurgiens
+score_accueil_rea_ajust;Note ajustée de satisfaction de l'accueil
+score_all_rea_ajust;Note ajustée de satisfaction globale des patients
+score_chambre_rea_ajust;Note ajustée de satisfaction de la chambre
+score_repas_rea_ajust;Note ajustée de satisfaction des repas
+score_sortie_rea_ajust;Note ajustée de satisfaction de la sortie
+taux_reco_brut;% de patients recommandant certainement l’établissement

@@ -1,0 +1,22 @@
+NAME;label
+raison_sociale;
+libelle_region;
+cat;Catégorie
+finess;Finess du TAS
+Sources;Année des données
+tdp_c_den_etbt;Dénominateur Tenue du dossier patient
+tdp_c_etbt;Valeur Tenue du dossier patient
+tdp_c_icbas_etbt;Intervalle de confiance bas Tenue du dossier patient
+tdp_c_ichaut_etbt;Intervalle de confiance haut Tenue du dossier patient
+dec_c_den_etbt;Dénominateur Délai d'envoi du courrier
+dec_c_etbt;Valeur Délai d'envoi du courrier
+dec_c_icbas_etbt;Intervalle de confiance bas Délai d'envoi du courrier
+dec_c_ichaut_etbt;Intervalle de confiance haut Délai d'envoi du courrier
+trd_c_den_etbt;Dénominateur Evaluation de la douleur
+trd_c_etbt;Valeur Evaluation de la douleur
+trd_c_icbas_etbt;Intervalle de confiance bas Evaluation de la douleur
+trd_c_ichaut_etbt;Intervalle de confiance haut Evaluation de la douleur
+dtn1_c1_den_etbt;Dénominateur Dépistage de troubles nutritionnels (2 niveaux)
+dtn1_c1_etbt;Valeur Dépistage de troubles nutritionnels (2 niveaux)
+dtn1_c1_icbas_etbt;Intervalle de confiance bas Dépistage de troubles nutritionnels (2 niveaux)
+dtn1_c1_ichaut_etbt;Intervalle de confiance haut Dépistage de troubles nutritionnels (2 niveaux)

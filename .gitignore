@@ -1,0 +1,16 @@
+# Secrets / environnement
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Sorties
+benchmarks/*.png
+benchmarks/*.csv
+
+# Sources volumineuses (ne pas versionner)
+sources/DECES EN FRANCE/*.csv
+sources/BDD PostgreSQL/DATA2023

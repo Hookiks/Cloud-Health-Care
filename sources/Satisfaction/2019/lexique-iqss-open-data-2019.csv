@@ -1,0 +1,50 @@
+NAME;LABEL
+classe_CA_qls_v2_MCO;Classe (Qualité de la lettre de liaison à la sortie - CA MCO )
+classe_DPA_coord_HAD;Classe (Coordination de la prise en charge - DPA HAD )
+classe_DPA_dtn_HAD;Classe (Suivi du poids - DPA HAD )
+classe_DPA_pcd_MCO;Classe (Evaluation et prise en charge de la douleur - DPA MCO )
+classe_DPA_pcd_SSR;Classe (Evaluation et prise en charge de la douleur - DPA SSR )
+classe_DPA_pspv_SSR;Classe (Projets de soins, projet de vie - DPA SSR )
+classe_DPA_qls_SSR;Classe (Qualité de  la lettre de liaison à la sortie - DPA SSR )
+classe_DPA_qls_v2_MCO;Classe (Qualité de la lettre de liaison à la sortie - DPA MCO )
+classe_DPA_tdp_v3_HAD;Classe (Tenue du dossier patient - DPA HAD )
+classe_DPA_tre_HAD;Classe (Traçabilité de l'évaluation du risque d'escarre - DPA HAD )
+classe_ias_icsha_v3_mhs;Classe (Indicateur de consommation de solutions hydro-alcooliques : secteurs MCO/HAD/SSR - IAS)
+classe_ias_icsha_v3_psy;Classe (Indicateur de consommation de solutions hydro-alcooliques : secteur PSY - IAS)
+ete_ortho_alerte_supe;Position de l'établissement par rapport à la borne d'alerte  (Evènement thrombo-embolique après prothèse de hanche/genou)
+ete_ortho_ratio_oe;Score de l'indicateur (Evènement thrombo-embolique après prothèse de hanche/genou)
+evol_ca_qls_v2_mco;Evolution par rapport au recueil précédent (Qualité de la lettre de liaison à la sortie - CA MCO)
+evol_dpa_coord_had;Evolution par rapport au recueil précédent (Coordination de la prise en charge - DPA HAD)
+evol_dpa_dtn_had;Evolution par rapport au recueil précédent (Suivi du poids - DPA HAD)
+evol_dpa_pcd_mco;Evolution par rapport au recueil précédent (Evaluation et prise en charge de la douleur - DPA MCO)
+evol_dpa_pcd_ssr;Evolution par rapport au recueil précédent (Evaluation et prise en charge de la douleur - DPA SSR)
+evol_dpa_pspv_ssr;Evolution par rapport au recueil précédent (Projets de soins, projet de vie - DPA SSR)
+evol_dpa_qls_ssr;Evolution par rapport au recueil précédent (Qualité de  la lettre de liaison à la sortie - DPA SSR)
+evol_dpa_qls_v2_mco;Evolution par rapport au recueil précédent (Qualité de la lettre de liaison à la sortie - DPA MCO)
+evol_dpa_tdp_v3_had;Evolution par rapport au recueil précédent (Tenue du dossier patient - DPA HAD)
+evol_dpa_tre_had;Evolution par rapport au recueil précédent (Traçabilité de l'évaluation du risque d'escarre - DPA HAD)
+evol_ias_icsha_v3_mhs;Evolution par rapport au recueil précédent (Indicateur de consommation de solutions hydro-alcooliques : secteurs MCO/HAD/SSR - IAS)
+evol_ias_icsha_v3_psy;Evolution par rapport au recueil précédent (Indicateur de consommation de solutions hydro-alcooliques : secteur PSY - IAS)
+finess;FINESS de l’établissement enquêté
+finess_pmsi;FINESS PMSI de l’établissement
+nom_ES;Nom de l'ES de l’établissement
+obligatoire_ca_mco;Recueil obligatoire en chirurgie-ambulatoire
+obligatoire_dpa_had;Recueil obligatoire en HAD
+obligatoire_dpa_mco;Recueil obligatoire en MCO
+obligatoire_dpa_ssr;Recueil obligatoire en SSR
+obligatoire_icsha_v3_mhs;Recueil obligatoire pour ICSHA (Secteur : MCO/HAD/SSR)
+obligatoire_icsha_v3_psy;Recueil obligatoire pour ICSHA (Secteur : Psychiatrie)
+region;Libellé de la région administrative de l’établissement enquêté
+res_ca_qls_v2_mco;Résultat (Qualité de la lettre de liaison à la sortie - CA MCO)
+res_dpa_coord_had;Résultat (Coordination de la prise en charge - DPA HAD)
+res_dpa_dtn_had;Résultat (Suivi du poids - DPA HAD)
+res_dpa_pcd_mco;Résultat (Evaluation et prise en charge de la douleur - DPA MCO)
+res_dpa_pcd_ssr;Résultat (Evaluation et prise en charge de la douleur - DPA SSR)
+res_dpa_pspv_ssr;Résultat (Projets de soins, projet de vie - DPA SSR)
+res_dpa_qls_ssr;Résultat (Qualité de  la lettre de liaison à la sortie - DPA SSR)
+res_dpa_qls_v2_mco;Résultat (Qualité de la lettre de liaison à la sortie - DPA MCO)
+res_dpa_tdp_v3_had;Résultat (Tenue du dossier patient - DPA HAD)
+res_dpa_tre_had;Résultat (Traçabilité de l'évaluation du risque d'escarre - DPA HAD)
+res_ias_icsha_v3_mhs;Résultat (Indicateur de consommation de solutions hydro-alcooliques : secteurs MCO/HAD/SSR - IAS)
+res_ias_icsha_v3_psy;Résultat (Indicateur de consommation de solutions hydro-alcooliques : secteur PSY - IAS)
+type;Libellé de la catégorie de l’établissement enquêté

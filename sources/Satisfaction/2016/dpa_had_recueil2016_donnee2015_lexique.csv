@@ -1,0 +1,33 @@
+NAME,LABEL
+Sources,année des données
+code_reg,Code de la région
+dec_c_den_etbt,dec_c Dénominateur
+dec_c_etbt,Délai d envoi du courrier de fin d hospitalisation
+dec_c_icbas_etbt,dec_c Intervalle de confiance bas
+dec_c_ichaut_etbt,dec_c Intervalle de confiance haut
+dtn_c_den_etbt,dtn_c Dénominateur
+dtn_c_etbt,Dépistage des troubles nutritionnels (Suivi du poids en HAD - Pas de niveau)
+dtn_c_icbas_etbt,dtn_c Intervalle de confiance bas
+dtn_c_ichaut_etbt,dtn_c Intervalle de confiance haut
+finess,finess de l'établissement
+lib_cat,catégorie
+lib_reg,libelle_region
+raison_sociale,raison sociale
+repondant,établissement répondant
+resultat_dec,
+resultat_dtn,
+resultat_tdp,
+resultat_trd,
+resultat_tre,
+tdp_c_den_etbt,tdp_c Dénominateur
+tdp_c_etbt,Tenue du dossier patient
+tdp_c_icbas_etbt,tdp_c Intervalle de confiance bas
+tdp_c_ichaut_etbt,tdp_c Intervalle de confiance haut
+trd_c_den_etbt,trd_c Dénominateur
+trd_c_etbt,Tracabilité de l évaluation de la douleur
+trd_c_icbas_etbt,trd_c Intervalle de confiance bas
+trd_c_ichaut_etbt,trd_c Intervalle de confiance haut
+tre_c_den_etbt,tre_c Dénominateur
+tre_c_etbt,Tracabilité de l évaluation du risque d escarre
+tre_c_icbas_etbt,tre_c Intervalle de confiance bas
+tre_c_ichaut_etbt,tre_c Intervalle de confiance haut

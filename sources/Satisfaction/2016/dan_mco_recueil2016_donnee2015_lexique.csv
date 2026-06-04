@@ -1,0 +1,18 @@
+NAME,LABEL
+Sources,année des données
+code_reg,Code de la région
+finess,finess de l'établissement
+lib_cat,catégorie
+lib_reg,libelle_region
+raison_sociale,raison sociale
+repondant,établissement répondant
+resultat_tda,
+resultat_trd,
+tda_c_den_etbt,tda_c Dénominateur
+tda_c_etbt,Tenue du dossier anesthésique
+tda_c_icbas_etbt,tda_c Intervalle de confiance bas
+tda_c_ichaut_etbt,tda_c Intervalle de confiance haut
+trd_c_den_etbt,trd_c Dénominateur
+trd_c_etbt,Tracabilité de l évaluation de la douleur
+trd_c_icbas_etbt,trd_c Intervalle de confiance bas
+trd_c_ichaut_etbt,trd_c Intervalle de confiance haut

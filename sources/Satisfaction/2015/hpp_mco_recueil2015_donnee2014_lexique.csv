@@ -1,0 +1,19 @@
+NAME;LABEL
+Sources;Année des données
+cat;Catégorie
+code_reg;Code de la région
+del1_c1_den_etbt;del1_c1 Dénominateur
+del1_c1_etbt;Délivrance niveau 1
+del1_c1_icbas_etbt;del1_c1 Intervalle de confiance bas
+del1_c1_ichaut_etbt;del1_c1 Intervalle de confiance haut
+finess;Finess du TAS
+lib_reg;Nom de la région
+peci_hppi_c_den_etbt;peci_hppi_c Dénominateur
+peci_hppi_c_etbt;Prise en charge initiale de l’ HPPI
+peci_hppi_c_icbas_etbt;peci_hppi_c Intervalle de confiance bas
+peci_hppi_c_ichaut_etbt;peci_hppi_c Intervalle de confiance haut
+raison_sociale;Raison sociale
+surmin_c_den_etbt;surmin_c Dénominateur
+surmin_c_etbt;Surveillance clinique minimale
+surmin_c_icbas_etbt;surmin_c Intervalle de confiance bas
+surmin_c_ichaut_etbt;surmin_c Intervalle de confiance haut

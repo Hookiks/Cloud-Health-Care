@@ -1,0 +1,24 @@
+Nom de la variable;Libellé de la variable
+Depot;Dépot d'au moins une adresse mail valide
+classement;Classe A : >= à 79.7, Classe B : >= à 76.5 et < à 79.7,Classe C : >= à 73.1 et < à 76.5,Classe D : < à 73.1, DI : moins de 30 réponses exploitables, NR : non répondant, NV : Non validé
+evolution;Changement de classe entre 2018 et 2019
+finess;finess juridique
+finess_geo;finess géographique
+nb_reco_brut;Nombre de patients recommandant certainement l’établissement
+nb_rep_score_ACC_ajust;N réponses - Satisfaction Accueil le jour de l’hospitalisation
+nb_rep_score_AVH_ajust;N réponses - Satisfaction Avant l’hospitalisation
+nb_rep_score_CER_ajust;N réponses - Satisfaction Chambre et repas / collation
+nb_rep_score_OVS_ajust;N réponses - Satisfaction Sortie et retour à domicile
+nb_rep_score_PEC_ajust;N réponses - Satisfaction de la prise en charge
+nb_rep_score_all_ajust;N réponses - Satisfaction globale des patients
+participation;Participation obligatoire ou facultative
+region;Région
+rs_finess;finess juridique - raison sociale
+rs_finess_geo;finess géographique - raison sociale
+score_ACC_ajust;Note ajustée - Satisfaction Accueil le jour de l’hospitalisation
+score_AVH_ajust;Note ajustée - Satisfaction Avant l’hospitalisation
+score_CER_ajust;Note ajustée - Satisfaction Chambre et repas / collation
+score_OVS_ajust;Note ajustée - Satisfaction Sortie et retour à domicile
+score_PEC_ajust;Note ajustée - Satisfaction de la prise en charge
+score_all_ajust;Note ajustée - Satisfaction globale des patients
+taux_reco_brut;% de patients recommandant certainement l’établissement

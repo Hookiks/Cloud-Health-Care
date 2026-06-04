@@ -1,0 +1,20 @@
+NAME;LABEL
+finess;Finess du TAS
+Raison_sociale;
+Enquete_obligatoire;
+Participation;
+Resultat_doc;DOC Résultat du contrôle
+doc_c_den_etbt;DOC_C Dénominateur
+doc_c_etbt;Document de sortie de SSR
+doc_c_icbas_etbt;DOC_C Intervalle de confiance bas
+doc_c_ichaut_etbt;DOC_C Intervalle de confiance haut
+doc_c_pos_seuil_etbt;DOC_C Positionnement par rapport à l'objectif de performance
+doc_c_pos_evol_etbt;
+Resultat_dtn;DTN  Résultat du contrôle
+dtn2_c2_den_etbt;DTN2_C2 Dénominateur
+dtn2_c2_etbt;Dépistage des troubles nutritionnels en SSR
+dtn2_c2_icbas_etbt;DTN2_C2 Intervalle de confiance bas
+dtn2_c2_ichaut_etbt;DTN2_C2 Intervalle de confiance haut
+dtn2_c2_pos_seuil_etbt;DTN2_C2 Positionnement par rapport à l'objectif de performance
+dtn2_c2_pos_evol_etbt;DTN2_C2 Evolution par rapport au recueil précédent
+Lib_reg;

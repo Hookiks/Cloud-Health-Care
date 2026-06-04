@@ -1,0 +1,13 @@
+NAME;LABEL
+finess;Finess du TAS
+Raison_sociale;
+Enquete_obligatoire;
+Participation;
+Resultat_rcp2;RCP2 Résultat du contrôle
+rcp2_c2_den_etbt;RCP2_C2 Dénominateur
+rcp2_c2_etbt;RCP niveau 2 : plurisdisciplinarité de la concertation
+rcp2_c2_icbas_etbt;RCP2_C2 Intervalle de confiance bas
+rcp2_c2_ichaut_etbt;RCP2_C2 Intervalle de confiance haut
+rcp2_c2_pos_seuil_etbt;RCP2_C2 Positionnement par rapport à l'objectif de performance
+rcp2_c2_pos_evol_etbt;RCP2_C2 Evolution par rapport au recueil précédent
+Lib_reg;
