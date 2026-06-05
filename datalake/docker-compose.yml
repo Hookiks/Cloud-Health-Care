@@ -1,5 +1,5 @@
 # =====================================================================
-#  CHU — Couche Data Lake (HDFS + Hive + Spark)
+#  CHU — Couche Data Lake (HDFS + Spark) — pipeline médaillon
 #  Stack Big Data Europe. Zone d'atterrissage des données brutes (FTP /
 #  fichiers distribués) avant alimentation du Data Warehouse PostgreSQL.
 #
@@ -9,7 +9,6 @@
 #  Interfaces web :
 #    - HDFS NameNode  : http://localhost:9870
 #    - HDFS DataNode  : http://localhost:9864
-#    - HiveServer2 UI : http://localhost:10002
 #    - Spark Master   : http://localhost:8080
 # =====================================================================
 services:
@@ -42,37 +41,6 @@ services:
       - hadoop_datanode:/hadoop/dfs/data
     ports:
       - "9864:9864"      # UI DataNode
-
-  # ---------------- Hive (SQL-on-HDFS) ----------------
-  hive-metastore-postgresql:
-    image: bde2020/hive-metastore-postgresql:2.3.0
-    container_name: hive-metastore-postgresql
-    restart: unless-stopped
-
-  hive-metastore:
-    image: bde2020/hive:2.3.2-postgresql-metastore
-    container_name: hive-metastore
-    restart: unless-stopped
-    command: /opt/hive/bin/hive --service metastore
-    env_file:
-      - ./hadoop.env
-    environment:
-      SERVICE_PRECONDITION: "namenode:9000 datanode:9864 hive-metastore-postgresql:5432"
-    ports:
-      - "9083:9083"
-
-  hive-server:
-    image: bde2020/hive:2.3.2-postgresql-metastore
-    container_name: hive-server
-    restart: unless-stopped
-    env_file:
-      - ./hadoop.env
-    environment:
-      HIVE_CORE_CONF_javax_jdo_option_ConnectionURL: "jdbc:postgresql://hive-metastore-postgresql/metastore"
-      SERVICE_PRECONDITION: "hive-metastore:9083"
-    ports:
-      - "10000:10000"    # JDBC (beeline / Power BI / DBeaver)
-      - "10002:10002"    # UI HiveServer2
 
   # ---------------- Spark (moteur de traitement) ----------------
   spark-master:

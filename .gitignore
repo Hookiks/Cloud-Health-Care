@@ -1,15 +1,10 @@
-# Secrets / environnement
-.env
-
 # Python
 __pycache__/
 *.py[cod]
-.venv/
-venv/
 
-# Sorties
-benchmarks/*.png
-benchmarks/*.csv
+# Sorties de benchmark
+datalake/benchmark/*.png
+datalake/spark/benchmark_results.csv
 
 # Sources volumineuses (ne pas versionner)
 sources/DECES EN FRANCE/*.csv
