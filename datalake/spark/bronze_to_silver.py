@@ -52,7 +52,7 @@ def read_pg(spark, table_quoted: str):
 
 def main() -> None:
     spark = (SparkSession.builder
-             .appName("CHU Médaillon — Bronze vers Silver")
+             .appName("CHU Médaillon")
              .config("spark.jars.packages", "org.postgresql:postgresql:42.5.4")
              .config("spark.sql.session.timeZone", "UTC")
              .config("spark.sql.legacy.parquet.datetimeRebaseModeInWrite", "CORRECTED")
@@ -112,7 +112,7 @@ def main() -> None:
            .withColumn("date_naissance", F.to_date("date_naissance", "yyyy-MM-dd")))
     write_silver(spark, apply_rgpd(trim_strings(d), "deces"), "deces")
 
-    print("== Sources opérationnelles (PostgreSQL/JDBC) — requises pour le fait CONSULTATION ==")
+    print("Sources opérationnelles")
     write_silver(spark, apply_rgpd(trim_strings(read_pg(spark, '"Patient"')), "patient"), "patient")
     write_silver(spark, trim_strings(read_pg(spark, '"Diagnostic"')), "diagnostic")
     write_silver(spark, apply_rgpd(trim_strings(read_pg(spark, '"Professionnel_de_sante"')), "professionnel"), "professionnel")
