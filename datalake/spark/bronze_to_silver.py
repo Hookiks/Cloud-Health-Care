@@ -101,10 +101,28 @@ def main() -> None:
          .option("encoding", "UTF-8").csv(f"{RAW}/finess"))
     write_silver(spark, apply_rgpd(trim_strings(e), "finess"), "finess")
 
-    # --- Satisfaction (';') ---
+    # --- Satisfaction 2019 (';') ---
     s = (spark.read.option("header", "true").option("sep", ";")
          .option("encoding", "UTF-8").csv(f"{RAW}/satisfaction"))
     write_silver(spark, trim_strings(s), "satisfaction")
+
+    # --- Satisfaction 2020 e-Satis (';') — pour FAIT_SATISFACTION (besoin n°8) ---
+    s20 = (spark.read.option("header", "true").option("sep", ";")
+           .option("encoding", "UTF-8").csv(f"{RAW}/satisfaction2020"))
+    s20 = (trim_strings(s20)
+           .withColumn("score_all_rea_ajust", F.col("score_all_rea_ajust").cast("double"))
+           .withColumn("taux_reco_brut", F.col("taux_reco_brut").cast("double")))
+    write_silver(spark, s20, "satisfaction2020")
+
+    # --- Activité professionnelle (';') — lien praticien -> établissement (besoin n°1) ---
+    act = (spark.read.option("header", "true").option("sep", ";")
+           .option("encoding", "UTF-8").csv(f"{RAW}/activite"))
+    act = (trim_strings(act)
+           .where(F.col("identifiant_organisation").isNotNull())
+           .withColumnRenamed("identifiant_organisation", "finess")
+           .select("identifiant", "finess")
+           .dropDuplicates(["identifiant"]))          # 1 organisation par praticien
+    write_silver(spark, act, "activite")
 
     # --- Décès (',') — RGPD retire nom/prénom/numéro d'acte ---
     d = (spark.read.option("header", "true").option("sep", ",")

@@ -1,10 +1,13 @@
 """Médaillon — étape SILVER -> GOLD (Spark).
 
-Lit les Parquet Silver et construit un schéma en CONSTELLATION à 2 faits :
-  • FAIT_HOSPITALISATION  (depuis le lac : hospitalisations + finess)
-  • FAIT_CONSULTATION     (depuis l'opérationnel : consultation)
+Lit les Parquet Silver et construit un schéma en CONSTELLATION à 4 faits :
+  • FAIT_HOSPITALISATION  (lac : hospitalisations + finess)
+  • FAIT_CONSULTATION     (opérationnel : consultation ; établissement reconstruit
+                           via activite_professionnel_sante -> besoin n°1)
+  • FAIT_SATISFACTION     (e-Satis 2020, par région -> besoin n°8)
+  • FAIT_DECES            (ajouté par add_fait_deces.py -> besoin n°7)
 partageant les dimensions DIM_TEMPS, DIM_PATIENT, DIM_DIAGNOSTIC
-(+ DIM_ETABLISSEMENT pour l'hospitalisation, DIM_PROFESSIONNEL pour la consultation).
+(+ DIM_ETABLISSEMENT pour hospitalisation/consultation, DIM_PROFESSIONNEL pour la consultation).
 
 Écrit le résultat en PARQUET dans /datalake/gold/<table>/ puis le charge dans
 PostgreSQL "Cloud Healthcare Unit" via JDBC (tables préfixées GOLD_, pour ne pas
@@ -44,6 +47,16 @@ _REGIONS = {
     "La Réunion": ["974"], "Mayotte": ["976"],
 }
 
+# Normalisation des libellés région du fichier e-Satis 2020 vers les libellés canoniques
+_SAT_ALIAS = {
+    "Hauts de France": "Hauts-de-France",
+    "Ile de France": "Île-de-France",
+    "Nouvelle Aquitaine": "Nouvelle-Aquitaine",
+    "PACA": "Provence-Alpes-Côte d'Azur",
+    "Océan Indien": "La Réunion",
+    "Ocean Indien": "La Réunion",
+}
+
 
 def write_gold(spark, df, name: str) -> None:
     """Écrit une table gold : Parquet (HDFS) + PostgreSQL (JDBC)."""
@@ -62,6 +75,19 @@ def region_df(spark):
     return spark.createDataFrame(rows, ["departement", "region"])
 
 
+# DOM (zone « DOM », le reste « Métropole ») — pour DIM_LOCALISATION
+_DOM = {"Guadeloupe", "Martinique", "Guyane", "La Réunion", "Mayotte"}
+
+
+def localisation_df(spark):
+    """DIM_LOCALISATION au grain région (clé naturelle = region), partagée par
+    FAIT_DECES et FAIT_SATISFACTION."""
+    regions = sorted(set(_REGIONS.keys()) | {"Inconnu"})
+    rows = [(r, "DOM" if r in _DOM else ("Inconnu" if r == "Inconnu" else "Métropole"))
+            for r in regions]
+    return spark.createDataFrame(rows, ["region", "zone"])
+
+
 def main() -> None:
     spark = (SparkSession.builder
              .appName("CHU Médaillon — Silver vers Gold")
@@ -76,6 +102,8 @@ def main() -> None:
     diag = spark.read.parquet(f"{SILVER}/diagnostic")
     prof = spark.read.parquet(f"{SILVER}/professionnel")
     consult = spark.read.parquet(f"{SILVER}/consultation")
+    activite = spark.read.parquet(f"{SILVER}/activite")             # identifiant -> finess
+    satis = spark.read.parquet(f"{SILVER}/satisfaction2020")
 
     # =================== DIMENSIONS ===================
     # --- DIM_PATIENT (clé naturelle : id_patient) ---
@@ -138,6 +166,9 @@ def main() -> None:
                     F.dayofmonth("d").alias("jour")))
     write_gold(spark, dim_temps, "DIM_TEMPS")
 
+    # --- DIM_LOCALISATION (grain région) — partagée par DECES + SATISFACTION ---
+    write_gold(spark, localisation_df(spark), "DIM_LOCALISATION")
+
     # =================== FAITS (constellation) ===================
     # --- FAIT_HOSPITALISATION ---
     fait_hosp = (hosp.select(
@@ -150,11 +181,11 @@ def main() -> None:
         .withColumn("nb_hospitalisation", F.lit(1)))
     write_gold(spark, fait_hosp, "FAIT_HOSPITALISATION")
 
-    # --- FAIT_CONSULTATION (durée = heure_fin - heure_debut) ---
+    # --- FAIT_CONSULTATION (durée + rattachement établissement -> besoin n°1) ---
     hhmmss = r"(\d{2}:\d{2}:\d{2})"
     deb = F.unix_timestamp(F.regexp_extract(F.col("Heure_debut").cast("string"), hhmmss, 1), "HH:mm:ss")
     fin = F.unix_timestamp(F.regexp_extract(F.col("Heure_fin").cast("string"), hhmmss, 1), "HH:mm:ss")
-    fait_consult = (consult.select(
+    base_consult = consult.select(
         F.col("Num_consultation").alias("num_consultation"),
         F.col("Id_patient").cast("int").alias("patient_id"),
         F.col("Id_prof_sante").alias("identifiant"),
@@ -162,10 +193,23 @@ def main() -> None:
         F.date_format(F.col("Date").cast("date"), "yyyyMMdd").cast("int").alias("date_key"),
         F.year(F.col("Date").cast("date")).alias("annee"),
         ((fin - deb) / 60).cast("int").alias("duree_minutes"))
+    # Établissement reconstruit via le praticien : Id_prof_sante -> organisation (FINESS)
+    fait_consult = (base_consult
+        .join(activite, "identifiant", "left")       # ajoute la colonne finess
         .withColumn("nb_consultation", F.lit(1)))
     write_gold(spark, fait_consult, "FAIT_CONSULTATION")
 
-    print("Silver -> Gold terminé (constellation à 2 faits chargée dans PostgreSQL).")
+    # --- FAIT_SATISFACTION (e-Satis 2020, agrégé par région -> besoin n°8) ---
+    sat = satis.replace(_SAT_ALIAS, subset=["region"])
+    fait_satis = (sat.where(F.col("score_all_rea_ajust").isNotNull())
+        .groupBy("region")
+        .agg(F.countDistinct("finess").alias("nb_etablissements"),
+             F.round(F.avg("score_all_rea_ajust"), 2).alias("score_satisfaction"),
+             F.round(F.avg("taux_reco_brut"), 2).alias("taux_recommandation"))
+        .withColumn("annee", F.lit(2020)))
+    write_gold(spark, fait_satis, "FAIT_SATISFACTION")
+
+    print("Silver -> Gold terminé (constellation chargée dans PostgreSQL).")
     spark.stop()
 
 

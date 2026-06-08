@@ -11,14 +11,17 @@ moteur de traitement **Apache Spark**, le résultat final étant chargé dans un
 **Data Warehouse PostgreSQL** pour la restitution (Power BI).
 
 ```
-SOURCES                          BRONZE                SILVER                  GOLD                     DWH
-(CSV/FTP + BDD opé.)             (brut, HDFS)          (nettoyé+RGPD, Parquet) (constellation, Parquet) (PostgreSQL)
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-deces.csv (2 Go) ───┐                                                                              ┌─► GOLD_DIM_*
-etablissement.csv ──┤ hdfs put  /datalake/raw  ──►  bronze_to_silver.py  ──►  silver_to_gold.py ──┤   GOLD_FAIT_*
-hospitalisations ───┤                          nettoyage + RGPD          modélisation étoile      │      │
-e-Satis 2019 ───────┘                          (Spark)                   (Spark)                  │      ▼
-Consultation/Patient (JDBC) ────────────────────────────────────────────────────────────────────┘   Power BI
+SOURCES                          BRONZE                SILVER                  GOLD                      DWH
+(CSV/FTP + BDD opé.)             (brut, HDFS)          (nettoyé+RGPD, Parquet) (constellation, Parquet)  (PostgreSQL)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+deces.csv (2 Go) ───┐                                                                               ┌─► GOLD_DIM_*
+etablissement.csv ──┤ hdfs put  /datalake/raw  ──►  bronze_to_silver.py  ──►  silver_to_gold.py  ──┤   GOLD_FAIT_HOSPITALISATION
+hospitalisations ───┤                          nettoyage + RGPD          constellation (3 faits)   │   GOLD_FAIT_CONSULTATION
+e-Satis 2019 ───────┘                          (Spark)                   (Spark)                   │      │
+Consultation/Patient (JDBC) ──────────────────────────────────────────────────────────────────────-┤   GOLD_FAIT_DECES
+                                                                          add_fait_deces.py ────────┘      │
+                                                                                                           ▼
+                                                                                                        Power BI
 ```
 
 Chaque couche a une **responsabilité unique** :
@@ -119,12 +122,14 @@ consult = read_pg(spark, '"Consultation"')   # 1 027 157 lignes
 patient = read_pg(spark, '"Patient"')         # 100 000 lignes (puis RGPD)
 ```
 
-**Résultat réel — 8 zones Silver écrites** :
+**Résultat réel — 10 zones Silver écrites** :
 | Silver | Lignes | Source |
 |---|---|---|
 | hospitalisations | 2 479 | lac |
 | finess | 416 665 | lac |
-| satisfaction | 1 152 | lac |
+| satisfaction (2019) | 1 152 | lac |
+| satisfaction2020 | 1 150 | lac (xlsx→csv) |
+| activite | 1 311 199 | lac (lien praticien→FINESS) |
 | deces | **25 088 208** | lac |
 | patient | 100 000 | JDBC (RGPD) |
 | diagnostic | 15 490 | JDBC |
@@ -147,21 +152,28 @@ jointures sont faites en mémoire par Spark, le résultat écrit en Parquet (pou
 le lac) **et** chargé dans PostgreSQL (pour la BI).
 
 ### Factuellement (exemple)
-**Constellation à 2 faits** construite :
+**Constellation à 4 faits** (2 produits par `silver_to_gold.py` : HOSPITALISATION
+et CONSULTATION ; SATISFACTION aussi par `silver_to_gold.py` ; DECES par
+`add_fait_deces.py`) :
 
 ```
-            DIM_TEMPS        DIM_PATIENT        DIM_DIAGNOSTIC
-                 \               |                  /
-                  \              |                 /
-        ┌──────────●─────────────●────────────────●──────────┐
-        │                                                     │
-  FAIT_HOSPITALISATION                               FAIT_CONSULTATION
-        │                                                     │
-   DIM_ETABLISSEMENT                                  DIM_PROFESSIONNEL
+            DIM_TEMPS · DIM_PATIENT · DIM_DIAGNOSTIC · DIM_ETABLISSEMENT
+                 \              |              |             /
+        ┌─────────●─────────────●──────────────●───────────●──────────┐
+        │                                                              │
+  FAIT_HOSPITALISATION                                       FAIT_CONSULTATION
+        │                                                              │
+   (DIM_ETABLISSEMENT)                              DIM_PROFESSIONNEL + DIM_ETABLISSEMENT
+
+  FAIT_DECES        ── grain : année × région × sexe (agrégé, 25 M décès)   [besoin 7]
+  FAIT_SATISFACTION ── grain : année × région (agrégé, e-Satis 2020)         [besoin 8]
 ```
 
-Les deux faits **partagent** `DIM_TEMPS`, `DIM_PATIENT`, `DIM_DIAGNOSTIC` (cœur de
-la constellation) ; chacun a en propre une dimension (établissement / professionnel).
+Les faits HOSPITALISATION et CONSULTATION **partagent** `DIM_TEMPS`, `DIM_PATIENT`,
+`DIM_DIAGNOSTIC` **et `DIM_ETABLISSEMENT`** (le rattachement consultation→établissement
+est reconstruit via `activite_professionnel_sante` → **besoin n°1**). `FAIT_DECES`
+et `FAIT_SATISFACTION` sont des faits **agrégés** au grain région, reliés à la
+dimension partagée **`DIM_LOCALISATION`** (besoins 7 et 8) — aucun fait n'est isolé.
 
 Exemple de construction d'un fait (extrait) :
 ```python
@@ -174,17 +186,37 @@ fait_consult = consult.select(
     ((fin - deb) / 60).cast("int").alias("duree_minutes"))
 ```
 
-**Résultat réel — 5 dimensions + 2 faits**, écrits en Parquet (`/datalake/gold/`)
+**Résultat réel — 6 dimensions + 4 faits**, écrits en Parquet (`/datalake/gold/`)
 ET en PostgreSQL (`GOLD_*`) :
-| Table Gold | Lignes |
-|---|---|
-| GOLD_DIM_PATIENT | 100 000 |
-| GOLD_DIM_DIAGNOSTIC | 15 490 |
-| GOLD_DIM_ETABLISSEMENT | 416 665 |
-| GOLD_DIM_PROFESSIONNEL | 1 048 575 |
-| GOLD_DIM_TEMPS | 2 703 |
-| **GOLD_FAIT_HOSPITALISATION** | 2 479 |
-| **GOLD_FAIT_CONSULTATION** | 1 027 157 |
+| Table Gold | Lignes | Job |
+|---|---|---|
+| GOLD_DIM_PATIENT | 100 000 | `silver_to_gold.py` |
+| GOLD_DIM_DIAGNOSTIC | 15 490 | `silver_to_gold.py` |
+| GOLD_DIM_ETABLISSEMENT | 416 665 | `silver_to_gold.py` |
+| GOLD_DIM_PROFESSIONNEL | 1 048 575 | `silver_to_gold.py` |
+| GOLD_DIM_TEMPS | 2 703 | `silver_to_gold.py` |
+| GOLD_DIM_LOCALISATION | 19 (région + zone) | `silver_to_gold.py` |
+| **GOLD_FAIT_HOSPITALISATION** | 2 479 | `silver_to_gold.py` |
+| **GOLD_FAIT_CONSULTATION** (avec `finess`) | 1 027 157 | `silver_to_gold.py` |
+| **GOLD_FAIT_SATISFACTION** (→ DIM_LOCALISATION) | 17 (par région, 2020) | `silver_to_gold.py` |
+| **GOLD_FAIT_DECES** (→ DIM_LOCALISATION) | 2 962 (agrégé / 25 M décès) | `add_fait_deces.py` |
+
+> **Constellation cohérente** : `DIM_LOCALISATION` (grain région) est **partagée**
+> par FAIT_DECES et FAIT_SATISFACTION — la région n'est plus une dimension dégénérée,
+> ces deux faits agrégés ne sont donc plus isolés mais participent à la constellation.
+> Un **pont** `DIM_ETABLISSEMENT.region → DIM_LOCALISATION.region` relie en plus la
+> grappe événementielle (hospit/consult) à la grappe régionale : la dimension région
+> filtre alors les **4 faits** → constellation **entièrement connectée**.
+
+> **Besoin n°1 (consultation par établissement)** : la table `Consultation` ne porte
+> pas de FINESS. Le lien est reconstruit via `activite_professionnel_sante.csv`
+> (`Id_prof_sante` → `identifiant_organisation`), ajoutant la colonne `finess` au
+> fait consultation (**~64 % des consultations rattachées**).
+>
+> **Besoin n°8 (satisfaction par région)** : `FAIT_SATISFACTION` agrège les scores
+> e-Satis 2020 par région (score global moyen, taux de recommandation, nb
+> d'établissements). Les libellés régionaux du fichier (« PACA », « Ile de France »…)
+> sont normalisés vers les libellés canoniques.
 
 **Validation de la constellation** (jointure fait ↔ dimension partagée) :
 ```sql
@@ -199,7 +231,84 @@ JOIN "GOLD_DIM_PATIENT" p ON f.patient_id = p.patient_id GROUP BY p.sexe;
 
 ---
 
-## 5. Étape 3 — Chargement DWH & restitution
+## 5. Étape 2b — Ajout de FAIT_DECES (`add_fait_deces.py`)
+
+### Théorie
+`FAIT_DECES` répond au besoin analytique **n°7 : nombre de décès par région et
+par année**. Contrairement aux deux autres faits (grain = 1 événement), il est
+**pré-agrégé** en Silver → Gold : le grain est `année × région × sexe`. On réduit
+ainsi 25 millions de lignes à ~3 000 agrégats, ce qui est **la seule donnée
+utile à l'analyse régionale** et évite de stocker un fait décès à 25 M lignes dans
+le DWH relationnel. C'est l'application du principe de **minimisation** :
+on ne stocke que le niveau de granularité nécessaire aux requêtes cibles.
+
+La dérivation `code_lieu_deces → département → région` est faite par Spark via
+une **table de correspondance broadcastée** (diffusion en mémoire sur les workers),
+ce qui évite un shuffle coûteux sur 25 M lignes.
+
+### Factuellement (exemple)
+La Silver deces contient (après RGPD) :
+```
+sexe=2 | date_naissance=1903-11-11 | date_deces=1983-04-11 | code_lieu_deces=02691
+```
+- `code_lieu_deces=02691` → département `02` → région `Hauts-de-France`.
+- Cette ligne s'agrège avec toutes les femmes décédées en 1983 dans les Hauts-de-France.
+
+Code Spark (extrait) :
+```python
+dept = F.when(
+    F.substring("code_lieu_deces", 1, 2) == "97",
+    F.substring("code_lieu_deces", 1, 3)          # DOM : 971/972/973/974/976
+).otherwise(F.substring("code_lieu_deces", 1, 2)) # métropole : 2 premiers chiffres
+
+agg = (df.withColumn("annee", F.year("date_deces"))
+         .withColumn("departement", dept)
+         .join(F.broadcast(ref), "departement", "left")
+         .groupBy("annee", "region", "sexe")
+         .agg(F.count("*").cast("int").alias("nb_deces")))
+```
+
+**Résultat factuel — décès par région 2019** (requête sur `GOLD_FAIT_DECES`) :
+
+| Région | Décès 2019 |
+|---|---:|
+| Île-de-France | 76 988 |
+| Auvergne-Rhône-Alpes | 70 406 |
+| Nouvelle-Aquitaine | 66 097 |
+| Occitanie | 59 781 |
+| Hauts-de-France | 55 137 |
+| Grand Est | 53 443 |
+| Provence-Alpes-Côte d'Azur | 52 579 |
+| Bretagne | 35 616 |
+| Pays de la Loire | 35 546 |
+| Normandie | 34 119 |
+| Bourgogne-Franche-Comté | 30 178 |
+| Centre-Val de Loire | 26 435 |
+| La Réunion | 5 111 |
+| Martinique | 3 555 |
+| Guadeloupe | 3 415 |
+| Guyane | 1 013 |
+| Mayotte | 746 |
+| Inconnu* | 7 271 |
+
+*Inconnu = code commune non géocodé (décès à l'étranger, codes invalides).*
+
+**Total 2019 : ~617 000 décès** — cohérent avec les statistiques INSEE réelles
+(~613 000), la différence s'expliquant par les délais de déclaration inclus dans le
+fichier.
+
+Requête SQL directe dans PostgreSQL :
+```sql
+SELECT region, SUM(nb_deces) AS nb_deces
+FROM "GOLD_FAIT_DECES"
+WHERE annee = 2019
+GROUP BY region
+ORDER BY nb_deces DESC;
+```
+
+---
+
+## 6. Étape 3 — Chargement DWH & restitution
 
 ### Théorie
 Le Gold Parquet sert le **traitement Big Data** (Spark/HDFS) ; sa copie chargée en
@@ -220,7 +329,7 @@ requêtes interactives faibles latences sur des volumes modérés).
 
 ---
 
-## 6. Gouvernance RGPD (transversale)
+## 7. Gouvernance RGPD (transversale)
 
 | Principe | Mise en œuvre |
 |---|---|
@@ -235,7 +344,7 @@ La donnée brute (Bronze) reste, elle, à accès restreint : seul le **flux nett
 
 ---
 
-## 7. Performance — Benchmark Parquet vs PostgreSQL
+## 8. Performance — Benchmark Parquet vs PostgreSQL
 
 Mesure (5 exécutions, moyenne) de requêtes analytiques sur la couche Gold, selon
 le moteur de stockage (`benchmark_gold.py`) :
@@ -256,7 +365,7 @@ parallélisme amortit son coût fixe. → graphe `datalake/benchmark/temps_repon
 
 ---
 
-## 8. Comparaison Hive / Spark / Impala — et pourquoi Spark
+## 9. Comparaison Hive / Spark / Impala — et pourquoi Spark
 
 | Critère | **Hive** | **Impala** | **Spark** (choisi) |
 |---|---|---|---|
@@ -295,7 +404,7 @@ Impala aurait dupliqué la couche requête sans couvrir nos besoins de transform
 
 ---
 
-## 9. Annexes
+## 10. Annexes
 
 ### Commandes
 ```bash
@@ -308,6 +417,10 @@ docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7
   --packages org.postgresql:postgresql:42.5.4 /app/bronze_to_silver.py
 docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 \
   --packages org.postgresql:postgresql:42.5.4 /app/silver_to_gold.py
+
+# Ajout FAIT_DECES (besoin n°7 : décès par région/année)
+docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 \
+  --packages org.postgresql:postgresql:42.5.4 /app/add_fait_deces.py
 
 # Benchmark
 docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 \
@@ -322,6 +435,6 @@ HDFS NameNode `:9870` · DataNode `:9864` · Spark Master `:8080`.
 ```
 datalake/
 ├── docker-compose.yml   hadoop.env   ingest.sh / ingest.ps1   README.md
-├── spark/   bronze_to_silver.py · silver_to_gold.py · benchmark_gold.py
+├── spark/   bronze_to_silver.py · silver_to_gold.py · add_fait_deces.py · benchmark_gold.py
 └── benchmark/  plot_benchmark.py · temps_reponse_medaillon.png
 ```
