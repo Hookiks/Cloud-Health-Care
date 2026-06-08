@@ -1,19 +1,3 @@
-"""Médaillon — étape BRONZE -> SILVER (Spark).
-
-Lit les données brutes (Bronze) :
-  • fichiers CSV du lac HDFS : hospitalisations, finess, satisfaction, deces ;
-  • tables opérationnelles PostgreSQL (Consultation, Patient, Diagnostic,
-    Professionnel) — nécessaires au fait CONSULTATION, absent du lac de fichiers.
-
-Applique : nettoyage (types, trim, dates, encodage UTF-8) + filtre RGPD
-(suppression nom, prénom, n° sécu, e-mail, téléphone, adresse).
-
-Écrit en PARQUET dans /datalake/silver/<source>/ (une zone par source).
-
-Soumission :
-  docker exec spark-master spark-submit \
-    --master spark://spark-master:7077 /app/bronze_to_silver.py
-"""
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 
@@ -21,12 +5,10 @@ HDFS = "hdfs://namenode:9000"
 RAW = HDFS + "/datalake/raw"
 SILVER = HDFS + "/datalake/silver"
 
-# Base opérationnelle (staging) lue via JDBC depuis le conteneur Spark
 PG_OP_URL = "jdbc:postgresql://host.docker.internal:5432/postgres"
 PG_USER, PG_PWD, PG_DRIVER = "postgres", "Test123", "org.postgresql.Driver"
 
-# ------------------------- RGPD -------------------------
-# Colonnes directement identifiantes à supprimer avant tout stockage.
+# RGPD 
 PII_EXACT = {"tel", "nom", "prenom", "adresse", "email", "num_secu", "numsecu"}
 PII_CONTAINS = ["telephone", "telecopie", "secu", "mail",
                 "numero_acte", "voie", "prenom", "adresse"]
@@ -54,7 +36,7 @@ def trim_strings(df):
 def write_silver(spark, df, name: str) -> None:
     path = f"{SILVER}/{name}"
     df.write.mode("overwrite").parquet(path)
-    n = spark.read.parquet(path).count()      # lecture métadonnées parquet (rapide)
+    n = spark.read.parquet(path).count()  
     print(f"  [SILVER] {name:<16} {n:>10} lignes -> {path}")
 
 
@@ -73,14 +55,13 @@ def main() -> None:
              .appName("CHU Médaillon — Bronze vers Silver")
              .config("spark.jars.packages", "org.postgresql:postgresql:42.5.4")
              .config("spark.sql.session.timeZone", "UTC")
-             # Dates anciennes (< 1582) dans le registre des décès : écriture sans rebase
              .config("spark.sql.legacy.parquet.datetimeRebaseModeInWrite", "CORRECTED")
              .getOrCreate())
     spark.sparkContext.setLogLevel("WARN")
 
     print("== Sources fichiers du lac (HDFS) ==")
 
-    # --- Hospitalisations (';') ---
+    #Hospitalisations 
     h = (spark.read.option("header", "true").option("sep", ";")
          .option("encoding", "UTF-8").csv(f"{RAW}/hospitalisation"))
     h = (h.withColumnRenamed("Num_Hospitalisation", "num_hospitalisation")
@@ -96,17 +77,17 @@ def main() -> None:
            .withColumn("date_entree", F.to_date("date_entree", "dd/MM/yyyy")))
     write_silver(spark, apply_rgpd(trim_strings(h), "hospitalisations"), "hospitalisations")
 
-    # --- Établissements FINESS (';') — RGPD retire e-mail/téléphone/adresse/voie ---
+    # Établissements FINESS RGPD 
     e = (spark.read.option("header", "true").option("sep", ";")
          .option("encoding", "UTF-8").csv(f"{RAW}/finess"))
     write_silver(spark, apply_rgpd(trim_strings(e), "finess"), "finess")
 
-    # --- Satisfaction 2019 (';') ---
+    # Satisfaction 2019
     s = (spark.read.option("header", "true").option("sep", ";")
          .option("encoding", "UTF-8").csv(f"{RAW}/satisfaction"))
     write_silver(spark, trim_strings(s), "satisfaction")
 
-    # --- Satisfaction 2020 e-Satis (';') — pour FAIT_SATISFACTION (besoin n°8) ---
+    #Satisfaction 2020 e-Satis 
     s20 = (spark.read.option("header", "true").option("sep", ";")
            .option("encoding", "UTF-8").csv(f"{RAW}/satisfaction2020"))
     s20 = (trim_strings(s20)
@@ -114,17 +95,17 @@ def main() -> None:
            .withColumn("taux_reco_brut", F.col("taux_reco_brut").cast("double")))
     write_silver(spark, s20, "satisfaction2020")
 
-    # --- Activité professionnelle (';') — lien praticien -> établissement (besoin n°1) ---
+    #Activité professionnelle
     act = (spark.read.option("header", "true").option("sep", ";")
            .option("encoding", "UTF-8").csv(f"{RAW}/activite"))
     act = (trim_strings(act)
            .where(F.col("identifiant_organisation").isNotNull())
            .withColumnRenamed("identifiant_organisation", "finess")
            .select("identifiant", "finess")
-           .dropDuplicates(["identifiant"]))          # 1 organisation par praticien
+           .dropDuplicates(["identifiant"]))
     write_silver(spark, act, "activite")
 
-    # --- Décès (',') — RGPD retire nom/prénom/numéro d'acte ---
+    #Décès 
     d = (spark.read.option("header", "true").option("sep", ",")
          .option("encoding", "UTF-8").csv(f"{RAW}/deces"))
     d = (d.withColumn("date_deces", F.to_date("date_deces", "yyyy-MM-dd"))

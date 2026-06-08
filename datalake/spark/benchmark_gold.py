@@ -1,19 +1,3 @@
-"""Benchmark de la couche GOLD — Parquet (HDFS) vs PostgreSQL (JDBC).
-
-Mesure le temps de réponse de requêtes analytiques sur la constellation gold,
-selon le moteur de stockage :
-  • PARQUET  : Spark lit le Parquet HDFS et agrège (colonne, distribué) ;
-  • POSTGRES : l'agrégation est poussée dans PostgreSQL (option JDBC `query`),
-               Spark ne récupère que le résultat.
-
-Sortie : tableau console + CSV /app/benchmark_results.csv (visualisé ensuite
-par datalake/benchmark/plot_benchmark.py).
-
-Soumission :
-  docker exec spark-master /spark/bin/spark-submit \
-    --master spark://spark-master:7077 \
-    --packages org.postgresql:postgresql:42.5.4 /app/benchmark_gold.py
-"""
 import time
 import csv
 
@@ -27,7 +11,6 @@ PG_USER, PG_PWD, PG_DRIVER = "postgres", "Test123", "org.postgresql.Driver"
 REPS = 5
 RESULT_CSV = "/app/benchmark_results.csv"
 
-# (libellé, requête Parquet [vues temp], requête PostgreSQL [tables GOLD_*])
 CASES = [
     ("Consultations/sexe",
      "SELECT p.sexe, count(*) n FROM fait_consultation f "
@@ -57,7 +40,6 @@ def main():
              .getOrCreate())
     spark.sparkContext.setLogLevel("WARN")
 
-    # Vues temporaires sur le Parquet gold (réévaluées à chaque requête)
     for tbl, view in [("FAIT_CONSULTATION", "fait_consultation"),
                       ("FAIT_HOSPITALISATION", "fait_hospitalisation"),
                       ("DIM_PATIENT", "dim_patient"), ("DIM_TEMPS", "dim_temps"),
@@ -65,7 +47,7 @@ def main():
         spark.read.parquet(f"{GOLD}/{tbl}").createOrReplaceTempView(view)
 
     def t_parquet(sql):
-        spark.sql(sql).collect()                       # warm-up
+        spark.sql(sql).collect()                  
         s = time.perf_counter()
         for _ in range(REPS):
             spark.sql(sql).collect()
@@ -76,7 +58,7 @@ def main():
             (spark.read.format("jdbc").option("url", DWH_URL)
              .option("query", sql).option("user", PG_USER)
              .option("password", PG_PWD).option("driver", PG_DRIVER).load().collect())
-        run()                                          # warm-up
+        run()                                       
         s = time.perf_counter()
         for _ in range(REPS):
             run()

@@ -1,9 +1,3 @@
-"""Trace le graphe des temps de réponse Parquet vs PostgreSQL.
-
-Lit le CSV produit par datalake/spark/benchmark_gold.py et génère un PNG.
-Exécution (hôte) : python datalake/benchmark/plot_benchmark.py
-Dépendances hôte : pandas, matplotlib.
-"""
 from pathlib import Path
 
 import matplotlib

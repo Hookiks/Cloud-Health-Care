@@ -27,7 +27,7 @@ services:
       - ../sources:/sources:ro
     ports:
       - "9870:9870"      # UI NameNode
-      - "9000:9000"      # RPC HDFS (fs.defaultFS)
+      - "9010:9000"      # RPC HDFS (hôte 9010 -> conteneur 9000 ; évite le conflit port 9000)
 
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8

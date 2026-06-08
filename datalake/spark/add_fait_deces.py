@@ -1,14 +1,3 @@
-"""Ajout de FAIT_DECES à la couche Gold.
-
-Lit /datalake/silver/deces (Parquet, RGPD déjà appliqué),
-dérive la région depuis code_lieu_deces, agrège par année x région x sexe,
-écrit en Parquet dans /datalake/gold/FAIT_DECES ET dans PostgreSQL GOLD_FAIT_DECES.
-
-Soumission :
-  docker exec spark-master spark-submit \
-    --master spark://spark-master:7077 \
-    --packages org.postgresql:postgresql:42.5.4 /app/add_fait_deces.py
-"""
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 
@@ -18,7 +7,6 @@ GOLD_DECES   = HDFS + "/datalake/gold/FAIT_DECES"
 DWH_URL      = "jdbc:postgresql://host.docker.internal:5432/Cloud Healthcare Unit"
 PG_USER, PG_PWD, PG_DRIVER = "postgres", "Test123", "org.postgresql.Driver"
 
-# Référentiel département -> région (découpage 2016)
 DEPT_REGION = {
     **{d: "Auvergne-Rhône-Alpes"        for d in ["01","03","07","15","26","38","42","43","63","69","73","74"]},
     **{d: "Bourgogne-Franche-Comté"     for d in ["21","25","39","58","70","71","89","90"]},
@@ -45,13 +33,11 @@ def main():
              .getOrCreate())
     spark.sparkContext.setLogLevel("WARN")
 
-    # Table de correspondance département -> région (broadcast)
     rows = [(k, v) for k, v in DEPT_REGION.items()]
     ref = spark.createDataFrame(rows, ["departement", "region"])
 
     df = spark.read.parquet(SILVER_DECES)
 
-    # Extraction département depuis code_lieu_deces (code commune INSEE 5 char)
     dept = F.when(
         F.substring("code_lieu_deces", 1, 2) == "97",
         F.substring("code_lieu_deces", 1, 3)
@@ -61,24 +47,19 @@ def main():
             .withColumn("departement", dept)
             .where(F.col("annee").isNotNull()))
 
-    # Jointure avec le référentiel géographique
     df = df.join(F.broadcast(ref), "departement", "left")
     df = df.na.fill({"region": "Inconnu"})
 
-    # Normalisation du sexe
     df = df.withColumn("sexe",
         F.when(F.col("sexe") == "1", "Homme")
          .when(F.col("sexe") == "2", "Femme")
          .otherwise("Inconnu"))
 
-    # Agrégation : grain = année x région x sexe
     agg = (df.groupBy("annee", "region", "sexe")
              .agg(F.count("*").cast("int").alias("nb_deces")))
 
-    # Écriture Parquet (Gold)
     agg.write.mode("overwrite").parquet(GOLD_DECES)
 
-    # Écriture PostgreSQL
     (agg.write.format("jdbc")
         .option("url", DWH_URL).option("dbtable", '"GOLD_FAIT_DECES"')
         .option("user", PG_USER).option("password", PG_PWD).option("driver", PG_DRIVER)
@@ -87,7 +68,6 @@ def main():
     n = spark.read.parquet(GOLD_DECES).count()
     print(f"  [GOLD] FAIT_DECES {n:>12} lignes -> Parquet + PostgreSQL(GOLD_FAIT_DECES)")
 
-    # Résultat direct : décès par région 2019
     print("\n=== Décès par région — 2019 ===")
     (agg.where(F.col("annee") == 2019)
         .groupBy("region")
