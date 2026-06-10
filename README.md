@@ -47,14 +47,12 @@ docker compose up -d              # HDFS + Spark
 bash ingest.sh                    # (ou ./ingest.ps1) -> /datalake/raw
 
 # Pipeline médaillon
-docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 \
-  --packages org.postgresql:postgresql:42.5.4 /app/bronze_to_silver.py
-docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 \
-  --packages org.postgresql:postgresql:42.5.4 /app/silver_to_gold.py
+docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 --packages org.postgresql:postgresql:42.5.4 /app/bronze_to_silver.py
+
+docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 --packages org.postgresql:postgresql:42.5.4 /app/silver_to_gold.py
 
 # Benchmark Parquet vs PostgreSQL
-docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 \
-  --packages org.postgresql:postgresql:42.5.4 /app/benchmark_gold.py
+docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 --packages org.postgresql:postgresql:42.5.4 /app/benchmark_gold.py
 python datalake/benchmark/plot_benchmark.py        # -> graphe PNG
 ```
 > ⚠️ `--packages org.postgresql:postgresql:42.5.4` est **indispensable** (driver JDBC).
