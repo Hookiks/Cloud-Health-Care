@@ -54,8 +54,9 @@ docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7
 # Benchmark Parquet vs PostgreSQL
 docker exec spark-master /spark/bin/spark-submit --master spark://spark-master:7077 --packages org.postgresql:postgresql:42.5.4 /app/benchmark_gold.py
 python datalake/benchmark/plot_benchmark.py        # -> graphe PNG
-```
-> ⚠️ `--packages org.postgresql:postgresql:42.5.4` est **indispensable** (driver JDBC).
+````--packages org.postgresql:postgresql:42.5.4` est **indispensable** (driver JDBC).
+
+
 
 ## Arborescence
 ```
