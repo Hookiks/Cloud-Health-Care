@@ -5,11 +5,7 @@ HDFS = "hdfs://namenode:9000"
 SILVER = HDFS + "/datalake/silver"
 GOLD = HDFS + "/datalake/gold"
 
-# Data Warehouse cible 
-DWH_URL = "jdbc:postgresql://host.docker.internal:5432/Cloud Healthcare Unit"
-PG_USER, PG_PWD, PG_DRIVER = "postgres", "Test123", "org.postgresql.Driver"
-
-# Référentiel département 
+# Référentiel département
 _REGIONS = {
     "Auvergne-Rhône-Alpes": ["01","03","07","15","26","38","42","43","63","69","73","74"],
     "Bourgogne-Franche-Comté": ["21","25","39","58","70","71","89","90"],
@@ -40,15 +36,11 @@ _SAT_ALIAS = {
 
 
 def write_gold(spark, df, name: str) -> None:
-    """Écrit une table gold : Parquet (HDFS) + PostgreSQL (JDBC)."""
+    """Écrit une table gold : Parquet (HDFS)."""
     path = f"{GOLD}/{name}"
     df.write.mode("overwrite").parquet(path)
     n = spark.read.parquet(path).count()
-    (df.write.format("jdbc")
-       .option("url", DWH_URL).option("dbtable", f'"GOLD_{name}"')
-       .option("user", PG_USER).option("password", PG_PWD).option("driver", PG_DRIVER)
-       .mode("overwrite").save())
-    print(f"  [GOLD] {name:<22} {n:>9} lignes -> Parquet + PostgreSQL(GOLD_{name})")
+    print(f"  [GOLD] {name:<22} {n:>9} lignes -> Parquet ({path})")
 
 
 def region_df(spark):
@@ -72,7 +64,6 @@ def localisation_df(spark):
 def main() -> None:
     spark = (SparkSession.builder
              .appName("CHU Médaillon — Silver vers Gold")
-             .config("spark.jars.packages", "org.postgresql:postgresql:42.5.4")
              .config("spark.sql.legacy.parquet.datetimeRebaseModeInWrite", "CORRECTED")
              .getOrCreate())
     spark.sparkContext.setLogLevel("WARN")
@@ -190,7 +181,7 @@ def main() -> None:
         .withColumn("annee", F.lit(2020)))
     write_gold(spark, fait_satis, "FAIT_SATISFACTION")
 
-    print("Silver -> Gold terminé (constellation chargée dans PostgreSQL).")
+    print("Silver -> Gold terminé (constellation Parquet écrite sur HDFS).")
     spark.stop()
 
 

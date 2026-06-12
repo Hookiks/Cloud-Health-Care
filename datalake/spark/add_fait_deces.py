@@ -4,8 +4,6 @@ from pyspark.sql import functions as F
 HDFS         = "hdfs://namenode:9000"
 SILVER_DECES = HDFS + "/datalake/silver/deces"
 GOLD_DECES   = HDFS + "/datalake/gold/FAIT_DECES"
-DWH_URL      = "jdbc:postgresql://host.docker.internal:5432/Cloud Healthcare Unit"
-PG_USER, PG_PWD, PG_DRIVER = "postgres", "Test123", "org.postgresql.Driver"
 
 DEPT_REGION = {
     **{d: "Auvergne-Rhône-Alpes"        for d in ["01","03","07","15","26","38","42","43","63","69","73","74"]},
@@ -60,13 +58,8 @@ def main():
 
     agg.write.mode("overwrite").parquet(GOLD_DECES)
 
-    (agg.write.format("jdbc")
-        .option("url", DWH_URL).option("dbtable", '"GOLD_FAIT_DECES"')
-        .option("user", PG_USER).option("password", PG_PWD).option("driver", PG_DRIVER)
-        .mode("overwrite").save())
-
     n = spark.read.parquet(GOLD_DECES).count()
-    print(f"  [GOLD] FAIT_DECES {n:>12} lignes -> Parquet + PostgreSQL(GOLD_FAIT_DECES)")
+    print(f"  [GOLD] FAIT_DECES {n:>12} lignes -> Parquet ({GOLD_DECES})")
 
     print("\n=== Décès par région — 2019 ===")
     (agg.where(F.col("annee") == 2019)
