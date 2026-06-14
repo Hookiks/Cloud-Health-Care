@@ -35,12 +35,22 @@ _SAT_ALIAS = {
 }
 
 
-def write_gold(spark, df, name: str) -> None:
-    """Écrit une table gold : Parquet (HDFS)."""
+def write_gold(spark, df, name: str, partition_by: str = None) -> None:
+    """Écrit une table gold au format Parquet (HDFS, natif DuckDB).
+
+    - partition_by : colonne de partitionnement Hive (ex. "annee" -> annee=2019/...)
+    """
     path = f"{GOLD}/{name}"
-    df.write.mode("overwrite").parquet(path)
+    if partition_by is not None:
+        # 1 fichier Parquet par partition (évite le small-files problem)
+        df = df.repartition(partition_by)
+    writer = df.write.mode("overwrite")
+    if partition_by is not None:
+        writer = writer.partitionBy(partition_by)
+    writer.parquet(path)
     n = spark.read.parquet(path).count()
-    print(f"  [GOLD] {name:<22} {n:>9} lignes -> Parquet ({path})")
+    suffix = f" [partitionné par {partition_by}]" if partition_by else ""
+    print(f"  [GOLD] {name:<22} {n:>9} lignes -> Parquet ({path}){suffix}")
 
 
 def region_df(spark):
@@ -151,7 +161,7 @@ def main() -> None:
         F.year("date_entree").alias("annee"),
         "jours_hospitalisation")
         .withColumn("nb_hospitalisation", F.lit(1)))
-    write_gold(spark, fait_hosp, "FAIT_HOSPITALISATION")
+    write_gold(spark, fait_hosp, "FAIT_HOSPITALISATION", partition_by="annee")
 
     #FAIT_CONSULTATION
     hhmmss = r"(\d{2}:\d{2}:\d{2})"
@@ -169,7 +179,7 @@ def main() -> None:
     fait_consult = (base_consult
         .join(activite, "identifiant", "left")
         .withColumn("nb_consultation", F.lit(1)))
-    write_gold(spark, fait_consult, "FAIT_CONSULTATION")
+    write_gold(spark, fait_consult, "FAIT_CONSULTATION", partition_by="annee")
 
     #FAIT_SATISFACTION 
     sat = satis.replace(_SAT_ALIAS, subset=["region"])

@@ -1,6 +1,9 @@
 """
 Charge les tables GOLD (Parquet sur HDFS) dans un fichier DuckDB unique.
 
+Le Parquet est lu nativement par DuckDB (read_parquet), avec hive_partitioning
+pour restituer la colonne de partition "annee" des tables de faits.
+
 Étapes :
   1. Exporte chaque dossier Parquet GOLD de HDFS vers le conteneur namenode
      (hdfs dfs -copyToLocal), puis vers le système de fichiers local
@@ -8,8 +11,7 @@ Charge les tables GOLD (Parquet sur HDFS) dans un fichier DuckDB unique.
   2. Charge chaque dossier Parquet dans une table DuckDB du fichier
      chu_gold.duckdb (CREATE OR REPLACE TABLE ... AS SELECT * FROM read_parquet).
 
-Prérequis : Docker en cours d'exécution (conteneur "namenode" actif),
-paquet Python "duckdb" installé (pip install duckdb).
+Prérequis : Docker actif (conteneur "namenode"), paquet Python "duckdb" installé.
 
 Usage : python load_to_duckdb.py
 """
@@ -41,6 +43,9 @@ TABLES = [
     "FAIT_DECES",
 ]
 
+# Tables écrites par Spark avec partitionBy("annee") -> dossiers annee=YYYY/
+PARTITIONED_TABLES = {"FAIT_HOSPITALISATION", "FAIT_CONSULTATION", "FAIT_DECES"}
+
 
 def run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
@@ -54,7 +59,6 @@ def export_table(name: str) -> Path:
     if local_path.exists():
         shutil.rmtree(local_path)
 
-    # Nettoie un éventuel export précédent dans le conteneur, puis ré-exporte
     run(["docker", "exec", CONTAINER, "rm", "-rf", container_path])
     run(["docker", "exec", CONTAINER, "mkdir", "-p", CONTAINER_TMP])
     run(["docker", "exec", CONTAINER, "hdfs", "dfs", "-copyToLocal",
@@ -65,8 +69,14 @@ def export_table(name: str) -> Path:
 
 
 def load_table(con: duckdb.DuckDBPyConnection, name: str, local_path: Path) -> None:
-    pattern = str(local_path / "*.parquet").replace("\\", "/")
-    con.execute(f'CREATE OR REPLACE TABLE "GOLD_{name}" AS SELECT * FROM read_parquet(\'{pattern}\')')
+    if name in PARTITIONED_TABLES:
+        # Parquet partitionné Hive (annee=YYYY/) -> hive_partitioning restitue "annee"
+        pattern = str(local_path / "**" / "*.parquet").replace("\\", "/")
+        source = f"read_parquet('{pattern}', hive_partitioning=true)"
+    else:
+        pattern = str(local_path / "*.parquet").replace("\\", "/")
+        source = f"read_parquet('{pattern}')"
+    con.execute(f'CREATE OR REPLACE TABLE "GOLD_{name}" AS SELECT * FROM {source}')
     n = con.execute(f'SELECT COUNT(*) FROM "GOLD_{name}"').fetchone()[0]
     print(f"  [DUCKDB] GOLD_{name:<22} {n:>9} lignes")
 

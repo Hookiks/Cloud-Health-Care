@@ -56,10 +56,11 @@ def main():
     agg = (df.groupBy("annee", "region", "sexe")
              .agg(F.count("*").cast("int").alias("nb_deces")))
 
-    agg.write.mode("overwrite").parquet(GOLD_DECES)
+    (agg.repartition("annee").write
+        .mode("overwrite").partitionBy("annee").parquet(GOLD_DECES))
 
     n = spark.read.parquet(GOLD_DECES).count()
-    print(f"  [GOLD] FAIT_DECES {n:>12} lignes -> Parquet ({GOLD_DECES})")
+    print(f"  [GOLD] FAIT_DECES {n:>12} lignes -> Parquet ({GOLD_DECES}) [partitionné par annee]")
 
     print("\n=== Décès par région — 2019 ===")
     (agg.where(F.col("annee") == 2019)
